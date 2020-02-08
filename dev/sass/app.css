@@ -189,9 +189,9 @@ a {
   .g-header .icon-menu {
     display: none;
     position: absolute;
-    top: 22px;
+    top: 15px;
     right: 0;
-    padding: 8px;
+    padding: 10px;
     font-size: 28px;
     color: #fff;
     opacity: .8;
@@ -1033,7 +1033,6 @@ a {
       width: 36px;
       height: 36px; }
       .author-detail .author-card .sns-links li .iconfont {
-        font-size: 32px;
         line-height: 40px; }
   .author-detail .comment {
     width: 90%; }
