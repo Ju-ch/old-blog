@@ -424,9 +424,15 @@ li p:nth-child(2) {
 
 .markdown-body .anchor {
   float: left;
-  padding-right: 4px;
   margin-left: -20px;
+  padding-right: 4px;
   line-height: 1;
+  opacity: 0;
+}
+
+.markdown-body .anchor .anchor-icon {
+  font-size: 25px;
+  display: inline-block;
 }
 
 .markdown-body .anchor:focus {
