@@ -4,19 +4,10 @@
 <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
 <script>
   socialShare('.social-share', {
-    sites: [
-      {% for i in site.social-share-items %}
-        '{{ i }}'
-        {% if forloop.last == false %},
-        {% endif %}
-      {% endfor %}
-    ],
-    mobileSites:[
-    {% for i in site.social-share-mobileSites %}
-        '{{ i }}'
-        {% if forloop.last == false %},
-        {% endif %}
-      {% endfor %}
-    ]});
+    sites: [{% for i in site.social-share-items %}'{{ i }}'{% if forloop.last == false %},{% endif %}{% endfor %}],
+    mobileSites:[{% for i in site.social-share-mobileSites %}'{{ i }}'{% if forloop.last == false %},{% endif %}{% endfor %}]});
 </script>
 {% include back_top_button.html %}
+{% if jekyll.environment == 'production' %}
+	{% include analytics.html %}
+{% endif %}
