@@ -18,6 +18,8 @@ baseurl: ''
 nav:
   home: '/'
   tags: '/tags.html'
+  archives: '/archives.html'
+  lc: '/leave_comments.html'
 
 # Footer
 footer:

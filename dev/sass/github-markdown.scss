@@ -233,9 +233,11 @@
   line-height: inherit;
 }
 
-.markdown-body a {
-  color: inherit;
-  text-decoration: underline;
+.markdown-body {
+  a:link { text-decoration: none;color: #007aff}
+  a:hover { text-decoration:underline;color: #ed6a43} 
+  a:visited { text-decoration: none;color: #53565c}
+  a:active { text-decoration:blink}
 }
 
 .markdown-body strong {

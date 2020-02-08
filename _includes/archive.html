@@ -1,0 +1,20 @@
+<ul class="tags-list" style="padding:40px">
+    {% for post in site.posts %}
+    {% unless post.next %}
+    <h3 style="margin-bottom: 8px">{{ post.date | date: "%b-%Y" }}</h3>
+    {% else %}
+    {% capture year %}{{ post.date | date: "%b, %Y" }}{% endcapture %}
+    {% capture nyear %}{{ post.next.date | date: "%b, %Y" }}{% endcapture %}
+    {% if year != nyear %}
+    <h3 style="margin-bottom: 8px">{{ post.date | date: "%b-%Y" }}</h3>
+    {% endif %}
+    {% endunless %}
+    <li>
+        <a class="tag-post" href="{{ post.url }}" target="_blank"
+            style="text-align: left; margin: 0;">{{ post.title }}</a>
+        <time style="float: right" datetime="{{ post.date | date:"%y-%m-%d" }}"
+            title="最后编辑于{% if post.overwrite %}{{ post.overwrite | date:'%Y-%m-%d' }}{% else %}{{ post.date | date:'%Y-%m-%d' }}{% endif %}">
+            <i class="iconfont icon-date"></i>{{ post.date | date:"%b-%-d" }}</time>
+    </li>
+    {% endfor %}
+</ul>
