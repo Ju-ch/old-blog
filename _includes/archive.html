@@ -11,7 +11,7 @@
     {% endunless %}
     <li>
         <a class="tag-post" href="{{ post.url }}" target="_blank"
-            style="text-align: left; margin: 0;">{{ post.title }}</a>
+            style="display: contents; margin: 0;">{{ post.title }}</a>
         <time style="float: right" datetime="{{ post.date | date:"%y-%m-%d" }}"
             title="最后编辑于{% if post.overwrite %}{{ post.overwrite | date:'%Y-%m-%d' }}{% else %}{{ post.date | date:'%Y-%m-%d' }}{% endif %}">
             <i class="iconfont icon-date"></i>{{ post.date | date:"%b-%-d" }}</time>

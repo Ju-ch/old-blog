@@ -849,6 +849,7 @@ a {
       text-align: center;
       margin-bottom: 20px; }
     .tags-list li .tag-post {
+      display: block;
       font-size: 16px;
       color: #666;
       text-align: center;
