@@ -188,6 +188,8 @@
   background-color: #fff;
   border-style: none;
   box-sizing: content-box;
+  border-radius: 12px;
+  box-shadow: 5px 5px 8px 5px #959da5;
 }
 
 .markdown-body svg:not(:root) {
@@ -633,4 +635,11 @@ li p:nth-child(2) {
 
 .markdown-body hr {
   border-bottom-color: #eee;
+}
+
+.post-image{
+  transition: 0.3s;
+}
+.post-image:hover{
+  transform: scale(1.05);
 }
