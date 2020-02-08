@@ -1,0 +1,12 @@
+<div id="comments"></div>
+<script type="text/javascript" src="{{ "/assets/js/Valine.min.js" | relative_url }}"></script>
+<script>
+    new Valine({
+        el: '#comments',
+        app_id: '{{ site.comments.app_id }}',
+        app_key: '{{ site.comments.app_key }}',
+        placeholder: "{{ site.comments.placeholder }}",
+        avatar: '{{ site.comments.avatar }}'
+    });
+</script>
+<style type="text/css">#comments {transition: 0s;-webkit-transition: 0.5s;}#comments:hover{transform: scale(1.05);}</style>

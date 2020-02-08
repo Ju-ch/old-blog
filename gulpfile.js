@@ -3,6 +3,7 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'), // 编译sass
     cleanCSS = require('gulp-clean-css'), // 压缩css文件
     rename = require('gulp-rename'); // 文件重命名
+let uglifyES = require('gulp-uglify-es').default;
 
 /* 
  * gulp - js
@@ -24,6 +25,13 @@ gulp.task('prism.js', function () {
 gulp.task('social-share.js', function () {
     gulp.src('dev/js/social-share.js')
         .pipe(uglify())
+        .pipe(rename({ suffix: '.min' }))
+        .pipe(gulp.dest('assets/js'))
+});
+
+gulp.task('Valine.js', function () {
+    gulp.src('dev/js/Valine.js')
+        .pipe(uglifyES())
         .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('assets/js'))
 });
@@ -66,7 +74,7 @@ gulp.task('github-markdown.css', function () {
 
 gulp.task('sass', ['app.css', 'share.css', 'prism.css', 'github-markdown.css',]);
 
-gulp.task('script', ['index.js', 'social-share.js', 'prism.js']);
+gulp.task('script', ['index.js', 'social-share.js', 'prism.js', 'Valine.js']);
 
 gulp.task('default', function () {
     gulp.run('sass', 'script');

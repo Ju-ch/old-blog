@@ -37,8 +37,11 @@ nightMode: true
 
 # Comments 评论功能
 comments:
-  disqus: false
-  disqus_url: 'https://liaokeyu.disqus.com/embed.js'
+  valine: true
+  app_id: '2G2gXjdf7IhyK7TbADeoxnXq-gzGzoHsz'
+  app_key: 'csLlYRnz2l4OsWcfr8VyjRqd'
+  placeholder: "输入评论…"
+  avatar: 'identicon'
 
 
 # Share
