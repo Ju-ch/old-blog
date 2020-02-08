@@ -754,7 +754,7 @@
 
     .article-item, .g-sidebar, .page-links, .search-card input, .search_result,
     .search_item, .article-item .post-tag, .tags-card .tag, .tags-list li,
-    .tags-list .tag {
+    .tags-list .tag, #toc, .scrollbar::-webkit-scrollbar-thumb, .scrollbar::-webkit-scrollbar {
         color: $color-f-dark;
         background-color: $color-dark-secondary;
         border-color: rgba(255, 255, 255, 0.1);

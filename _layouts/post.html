@@ -46,7 +46,11 @@
     {% endif %}
 
     <article class="markdown-body">
-      {{ page.content }}
+      {% if page.toc %}
+      <toc id="toc" style="visibility:hidden;" class="scrollbar"></toc>
+      <i id="toc-show" class="iconfont icon-swap" style="position: fixed;left: 10px;bottom: 10px;display: none;"></i>
+      {% endif %}
+      {{ content }}
     </article>
 
     {% if site.social-share %}

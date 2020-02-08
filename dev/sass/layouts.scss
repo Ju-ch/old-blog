@@ -35,6 +35,12 @@
     }
 }
 
+@media screen and (max-width: 1200px) {
+    #toc, #toc-show {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .post-wrapper, .markdown-body, .read-next {
         width: 92%;

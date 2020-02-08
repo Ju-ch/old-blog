@@ -36,6 +36,13 @@ gulp.task('Valine.js', function () {
         .pipe(gulp.dest('assets/js'))
 });
 
+gulp.task('toc.js', function () {
+    gulp.src('dev/js/toc.js')
+        .pipe(uglifyES())
+        .pipe(rename({ suffix: '.min' }))
+        .pipe(gulp.dest('assets/js'))
+});
+
 /* 
  * gulp - css
  */
@@ -74,7 +81,7 @@ gulp.task('github-markdown.css', function () {
 
 gulp.task('sass', ['app.css', 'share.css', 'prism.css', 'github-markdown.css',]);
 
-gulp.task('script', ['index.js', 'social-share.js', 'prism.js', 'Valine.js']);
+gulp.task('script', ['index.js', 'social-share.js', 'prism.js', 'Valine.js', 'toc.js']);
 
 gulp.task('default', function () {
     gulp.run('sass', 'script');

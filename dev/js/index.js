@@ -245,4 +245,38 @@ $(document).ready(function(){
         }
     });
 
+    /**
+     * Initiate TOC
+     */
+    $('#toc').toc();
+    
+    if ($(window).width() > 695) {
+        var toc = $('#toc');
+        $(document).scroll(function () {
+            var scrollTop = $(this).scrollTop();
+
+            if (scrollTop >= 460) {
+                if ($(document).scrollTop() >= $(document).height() - 2000) {
+                    toc.css('visibility', 'hidden');
+                }else{
+                    toc.css('visibility', 'visible');
+                }
+            } else {
+                toc.css('visibility', 'hidden');
+            }
+        });
+    }
+
+    $("#toc-close").click(function () {
+        $("#toc-close").hide(function () {
+            $("toc").slideToggle();
+        });
+        $("#toc-show").show(1500);
+    });
+    $("#toc-show").click(function () {
+        $("toc").slideToggle();
+        $("#toc-show").hide(500);
+        $("#toc-close").slideToggle();
+    });
+
 });

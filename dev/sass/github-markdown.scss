@@ -643,3 +643,69 @@ li p:nth-child(2) {
 .post-image:hover{
   transform: scale(1.05);
 }
+
+// TOC
+#toc {
+  list-style: decimal;
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+  border-radius: .3em;
+  background: rgba(255,255,255,.85);
+  padding-bottom: initial;
+  background-color: #fff;
+  border: 1px solid #e7eaf1;
+  box-sizing: border-box;
+  box-shadow: 0 1px 3px rgba(0,37,55,.06);
+  width: 200px;
+  height: 350px;
+  overflow: auto;
+  overflow-x: auto;
+  white-space: nowrap;
+  font-size: small;
+  ol{
+    padding: 15px 15px 15px 5px;
+    padding-left: 2em;
+    ol{
+      padding: 0px 0px;
+      padding-left: 2em;
+    }
+  }
+
+  i{
+    padding-left: 175px;
+    position: fixed;
+  }
+}
+
+/*滚动条整体部分*/
+.scrollbar::-webkit-scrollbar{
+  width: 7px;
+  height: 7px;
+  border-radius: 4px;
+  background-color: white;
+}
+/*滚动条两端的箭头*/
+.scrollbar::-webkit-scrollbar-button{
+  display: none;
+}
+/*经测试好像并不能控制什么*/
+.scrollbar::-webkit-scroll-track{
+  display: none;
+}
+/*滚动条内侧部分 去掉*/
+.scrollbar::-webkit-scrollbar-track-piece {
+  display: none;
+}
+/*滚动条中可以拖动的那部分*/
+.scrollbar::-webkit-scrollbar-thumb{
+  background-color: white;
+  border-radius: 4px;
+}
+/*变角部分*/
+.scrollbar::-webkit-scrollbar-corner {
+  display: none;
+}
+.scrollbar::-webkit-resizer{
+  display: none;
+}
