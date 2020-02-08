@@ -1,11 +1,11 @@
 <footer class="g-footer">
-  <section>{{ site.title }} ©
-  {% assign current = "now" | date: "%Y" | plus: 0%}
-  {% unless site.footer.since and site.footer.since == current %}
-    {{ site.footer.since }}
-    -
-  {% endunless %}
-  {{ current }}
+  <section>
+    <a href="javascript:scroll(50,50)" title="Top"><i class="iconfont icon-top"></i></a><br>
+    <a href="{{ site.url }}">{{ site.author }}</a> ©
+    {% assign current = "now" | date: "%Y" | plus: 0%}
+    {% unless site.footer.since and site.footer.since == current %}
+    {% endunless %}
+    {{ current }}
+    Powered by <a href="//jekyllrb.com" target="_blank">Jekyll</a> | <a href="https://github.com/kaeyleo/jekyll-theme-H2O" target="_blank">Theme H2O</a>
   </section>
-  <section>Powered by <a href="//jekyllrb.com">Jekyll</a> | <a href="https://github.com/kaeyleo/jekyll-theme-H2O">Theme H2O</a></section>
 </footer>
