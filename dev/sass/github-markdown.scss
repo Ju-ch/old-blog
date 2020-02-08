@@ -325,6 +325,7 @@
   font-size: 17px;
   line-height: 1.8;
   text-align: justify;
+  text-indent:2em;
 }
 
 .markdown-body blockquote {
@@ -461,6 +462,7 @@ li p:nth-child(2) {
 
 .markdown-body blockquote>:last-child {
   margin-bottom: 0;
+  text-indent: 0;
 }
 
 .markdown-body kbd {
