@@ -30,6 +30,9 @@
             width: 56px;
         }
     }
+    .article-list .article-item:hover, .tags-list li:hover {
+        transform: none;
+    }
 }
 
 @media screen and (max-width: 768px) {

@@ -183,6 +183,7 @@ a {
   .article-list .article-item {
     width: 100%;
     margin-bottom: 16px;
+    transition: 0.5s;
     padding: 30px 20px;
     background-color: #fff;
     border: 1px solid #E7EAF1;
@@ -249,6 +250,8 @@ a {
           height: 18px;
           background: url("../icons/date.svg") no-repeat center;
           background-size: 100%; }
+  .article-list .article-item:hover {
+    transform: scale(1.05); }
 
 .author-card {
   text-align: center; }
@@ -739,7 +742,8 @@ a {
     border-radius: 3px;
     box-sizing: border-box;
     box-shadow: 0 1px 3px rgba(0, 37, 55, 0.06);
-    margin-bottom: 12px; }
+    margin-bottom: 12px;
+    transition: 0.5s; }
     .tags-list li:first-child {
       margin-bottom: 24px;
       cursor: default; }
@@ -760,6 +764,8 @@ a {
       margin: 16px auto; }
       .tags-list li .tag-post:hover {
         color: #000; }
+  .tags-list li:hover {
+    transform: scale(1.05); }
 
 .np-banner {
   position: fixed;
@@ -884,7 +890,9 @@ a {
   .pagination .page-num {
     display: none; }
   .pagination .page-link {
-    width: 56px; } }
+    width: 56px; }
+  .article-list .article-item:hover, .tags-list li:hover {
+    transform: none; } }
 
 @media screen and (max-width: 768px) {
   .post-wrapper, .markdown-body, .read-next {

@@ -158,6 +158,7 @@
     .article-item {
         width: 100%;
         margin-bottom: 16px;
+        transition: 0.5s;
         @include cardStyle;
         &:last-child {
             margin-bottom: 0;
@@ -216,6 +217,9 @@
                 @include timeStyle;
             }
         }
+    }
+    .article-item:hover{
+        transform: scale(1.05);
     }
 }
 
@@ -668,6 +672,7 @@
     li {
         @include cardStyle;
         margin-bottom: 12px;
+        transition: 0.5s;
         &:first-child {
             margin-bottom: 24px;
             cursor: default;
@@ -693,6 +698,9 @@
                 color: #000;
             }
         }
+    }
+    li:hover{
+        transform: scale(1.05);
     }
 
 }
