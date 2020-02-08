@@ -1,10 +1,13 @@
 ---
 layout: post
 title: 'Hello Jekyll'
-date: 2017-04-18
-author: Jekyll
-cover: 'http://on2171g4d.bkt.clouddn.com/jekyll-banner.png'
-tags: jekyll
+date: 2017-04-18 +0800
+author:
+    name: Jekyll
+    url: "//jekyllrb.com"
+tags: [H2O]
+postPatterns: overlappingCircles
+toc: true
 ---
 
 > Transform your plain text into static websites and blogs.
