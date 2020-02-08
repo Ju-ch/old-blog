@@ -8,8 +8,8 @@
   </head>
 
 <body>
-  <input id="nm-switch" type="hidden" value="{{ site.nightMode }}"> {% include header.html %}
-
+  <input id="nm-switch" type="hidden" value="{{ site.nightMode }}">
+  {% include header.html %}
   <header
     class="g-banner post-header {% if page.postPatterns %}{{ page.postPatterns | prepend: 'post-pattern-' }}{% else %}{{ site.postPatterns | prepend: 'post-pattern-' }}{% endif %} {{ site.theme-color | prepend: 'bgcolor-' }} {% unless page.cover %}post-no-cover{% endunless %}"
     data-theme="{{ site.theme-color }}">

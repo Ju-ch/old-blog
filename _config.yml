@@ -51,7 +51,6 @@ comments:
   placeholder: "输入评论…"
   avatar: 'identicon'
 
-
 # Share
 social-share: true
 social-share-items: ["weibo", "qq", "wechat", "qzone", "linkedin", "facebook", "twitter", "reddit", "email"]
@@ -86,9 +85,6 @@ markdown: kramdown
 highlighter: rouge
 kramdown:
   input: GFM
-
-# RSS
-RSS: false
 
 # Permalink
 # See: https://github.com/kaeyleo/jekyll-theme-H2O/issues/35

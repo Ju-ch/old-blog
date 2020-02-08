@@ -19,7 +19,7 @@ header-img: "https://jekyll.oss-cn-hongkong.aliyuncs.com/UTOOLS1579942164067.jpg
             {% if post.cover %}
             <div class="post-cover">
                 <a class="post-link" href="{{ post.url | relative_url }}" title="{{ post.title }}"></a>
-                <img src="{{ post.cover | relative_url }}" href="{{ post.url | relative_url }}" alt="">
+                <img src="{{ post.cover | relative_url }}" href="{{ post.url | relative_url }}" alt="{{ post.title }}">
             </div>
             {% endif %}
             <section class="post-preview">
@@ -99,5 +99,3 @@ header-img: "https://jekyll.oss-cn-hongkong.aliyuncs.com/UTOOLS1579942164067.jpg
     </aside>
 
 </main>
-
-{% include footer.html %}
