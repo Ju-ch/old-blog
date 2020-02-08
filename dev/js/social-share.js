@@ -825,8 +825,8 @@ function(t, e, r) {
         wechatQrcodeHelper: "<p>分享给朋友们</p>",
         wechatQrcodeSize: 100,
         sites: ["weibo", "qq", "wechat", "qzone", "douban", "linkedin", "facebook", "twitter", "reddit", "email"],
-        mobileSites: [],
-        disabled: [],
+        mobileSites: ["weibo", "qq", "facebook", "twitter", "email"],
+        disabled: ["douban"],
         initialized: !1
     },
     B = {

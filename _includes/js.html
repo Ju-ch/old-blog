@@ -2,11 +2,6 @@
 <script type="text/javascript" async src="{{ "/assets/js/prism.min.js" | relative_url }}"></script>
 <script type="text/javascript" async src="{{ "/assets/js/index.min.js" | relative_url }}"></script>
 <script type="text/javascript" async src="{{ "/assets/js/toc.min.js" | relative_url }}"></script>
-<script>
-  socialShare('.social-share', {
-    sites: [{% for i in site.social-share-items %}'{{ i }}'{% if forloop.last == false %},{% endif %}{% endfor %}],
-    mobileSites:[{% for i in site.social-share-mobileSites %}'{{ i }}'{% if forloop.last == false %},{% endif %}{% endfor %}]});
-</script>
 {% include back_top_button.html %}
 {% if jekyll.environment == 'production' %}
 	{% include analytics.html %}
