@@ -46,7 +46,8 @@ comments:
 
 # Share
 social-share: true
-social-share-items: ['wechat', 'weibo', 'douban', 'twitter']
+social-share-items: ["weibo", "qq", "wechat", "qzone", "linkedin", "facebook", "twitter", "reddit", "email"]
+social-share-mobileSites: ["weibo", "qq", "facebook", "twitter", "email"]
 
 # theme color 主题皮肤
 theme-color: 'default'  # pink or default

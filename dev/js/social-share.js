@@ -671,12 +671,12 @@ function(t, e, r) {
         v(i ? r.reverse() : r,
         function(r) {
             var n = s(r, e),
-            o = e.initialized ? d(t, "icon-" + r) : f('<a class="social-share-icon icon-' + r + '"></a>');
+            o = e.initialized ? d(t, "icon" + r) : f('<a class="social-share-icon icon' + r + '"></a>');
             return o.length ? (o[0].href = n, "wechat" === r ? o[0].tabindex = -1 : o[0].target = "_blank", void(e.initialized || (i ? t.insertBefore(o[0], t.firstChild) : t.appendChild(o[0])))) : !0
         })
     }
     function o(t, e) {
-        var r = d(t, "icon-wechat", "a");
+        var r = d(t, "iconwechat", "a");
         if (0 === r.length) return ! 1;
         var i = f('<div class="wechat-qrcode"><h4>' + e.wechatQrcodeTitle + '</h4><div class="qrcode"></div><div class="help">' + e.wechatQrcodeHelper + "</div></div>"),
         n = d(i[0], "qrcode", "div");
@@ -821,10 +821,10 @@ function(t, e, r) {
         image: T,
         imageSelector: r,
         weiboKey: "",
-        wechatQrcodeTitle: "微信扫一扫：分享",
-        wechatQrcodeHelper: "<p>微信里点“发现”，扫一下</p><p>二维码便可将本文分享至朋友圈。</p>",
+        wechatQrcodeTitle: "微信扫一扫",
+        wechatQrcodeHelper: "<p>分享给朋友们</p>",
         wechatQrcodeSize: 100,
-        sites: ["weibo", "qq", "wechat", "tencent", "douban", "qzone", "linkedin", "diandian", "facebook", "twitter", "google"],
+        sites: ["weibo", "qq", "wechat", "qzone", "douban", "linkedin", "facebook", "twitter", "reddit", "email"],
         mobileSites: [],
         disabled: [],
         initialized: !1
@@ -832,15 +832,14 @@ function(t, e, r) {
     B = {
         qzone: "http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url={{URL}}&title={{TITLE}}&desc={{DESCRIPTION}}&summary={{SUMMARY}}&site={{SOURCE}}",
         qq: "http://connect.qq.com/widget/shareqq/index.html?url={{URL}}&title={{TITLE}}&source={{SOURCE}}&desc={{DESCRIPTION}}&pics={{IMAGE}}",
-        tencent: "http://share.v.t.qq.com/index.php?c=share&a=index&title={{TITLE}}&url={{URL}}&pic={{IMAGE}}",
         weibo: "http://service.weibo.com/share/share.php?url={{URL}}&title={{TITLE}}&pic={{IMAGE}}&appkey={{WEIBOKEY}}",
         wechat: "javascript:",
         douban: "http://shuo.douban.com/!service/share?href={{URL}}&name={{TITLE}}&text={{DESCRIPTION}}&image={{IMAGE}}&starid=0&aid=0&style=11",
-        diandian: "http://www.diandian.com/share?lo={{URL}}&ti={{TITLE}}&type=link",
         linkedin: "http://www.linkedin.com/shareArticle?mini=true&ro=true&title={{TITLE}}&url={{URL}}&summary={{SUMMARY}}&source={{SOURCE}}&armin=armin",
         facebook: "https://www.facebook.com/sharer/sharer.php?u={{URL}}",
         twitter: "https://twitter.com/intent/tweet?text={{TITLE}}&url={{URL}}&via={{ORIGIN}}",
-        google: "https://plus.google.com/share?url={{URL}}"
+        reddit: "https://www.reddit.com/submit?url={{URL}}",
+        email: "mailto:?subject={{SOURCE}}&body=来自{{ORIGIN}}"
     };
     t.socialShare = function(t, e) {
         t = "string" == typeof t ? h(t) : t,
