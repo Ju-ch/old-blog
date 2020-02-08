@@ -1,11 +1,12 @@
 ---
 title: Tags
 layout: default
+postPatterns: glamorous
 ---
 
 {% include header.html %}
 
-<div class="g-banner tags-banner {{ site.postPatterns | prepend: 'post-pattern-' }} {{ site.theme-color | prepend: 'bgcolor-' }}" data-theme="{{ site.theme-color }}">
+<div class="g-banner tags-banner {% if page.postPatterns %}{{ page.postPatterns | prepend: 'post-pattern-' }}{% else %}{{ site.postPatterns | prepend: 'post-pattern-' }}{% endif %} {{ site.theme-color | prepend: 'bgcolor-' }}" data-theme="{{ site.theme-color }}">
     <h2>TAGS</h2>
 </div>
 
