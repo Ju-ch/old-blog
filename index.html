@@ -40,8 +40,7 @@ header-img: "https://jekyll.oss-cn-hongkong.aliyuncs.com/UTOOLS1579942164067.jpg
                     {% endfor %}
                     {% endif %}
                 </div>
-                <time class="post-date"
-                    datetime="{{ post.date | date:"%y-%m-%d" }}">{{ post.date | date_to_string }}</time>
+                <time class="post-meta-item post-date" datetime="{{ post.date | date:"%y-%m-%d" }}" title="最后编辑于{% if post.overwrite %}{{ post.overwrite | date:'%Y-%m-%d' }}{% else %}{{ post.date | date:'%Y-%m-%d' }}{% endif %}"><i class="iconfont icon-date"></i>{{ post.date | date_to_string }}</time>
             </footer>
         </article>
         {% endfor %}
