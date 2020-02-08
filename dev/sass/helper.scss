@@ -78,9 +78,13 @@ $post-content-w: 720px;
         margin: 0 auto;
         overflow: hidden;
         box-shadow: 0 1px 4px rgba(100, 110, 120, .53);
+        transition: 1s;
         img {
             width: 100%;
         }
+    }
+    .avatar:hover{
+        transform: rotate(666turn) scale(1.5);
     }
     .author-name {
         width: 100%;

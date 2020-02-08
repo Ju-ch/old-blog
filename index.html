@@ -56,7 +56,9 @@ header-img: "https://jekyll.oss-cn-hongkong.aliyuncs.com/UTOOLS1579942164067.jpg
         <div class="g-sidebar">
             <section class="author-card">
                 <div class="avatar">
-                    <img src="{{ site.avatar | relative_url }}" alt="">
+                    <a href="{{ site.url }}">
+                        <img src="{{ site.avatar | relative_url }}" alt="">
+                    </a>
                 </div>
                 <div class="author-name" rel="author">{{ site.author }}</div>
                 <div class="bio">
