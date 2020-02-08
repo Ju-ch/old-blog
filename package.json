@@ -10,10 +10,29 @@
   "license": "ISC",
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-clean-css": "^3.0.4",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0",
-    "gulp-uglify": "^2.1.2"
+    "gulp-clean-css": "^3.10.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-jshint": "^2.1.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^3.2.1",
+    "gulp-uglify": "^2.1.2",
+    "gulp-uglify-es": "^2.0.0",
+    "jshint": "^2.11.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "lodash.mergewith": ">=4.6.2",
+    "lodash.template": ">=4.5.0",
+    "braces": ">=2.3.1",
+    "clean-css": ">=4.1.11",
+    "fstream": ">=1.0.12",
+    "tar": ">=2.2.2",
+    "extend": ">=3.0.2",
+    "minimatch": ">=3.0.2",
+    "randomatic": ">=3.0.0",
+    "cryptiles": ">=4.1.2",
+    "sshpk": ">=1.13.2",
+    "lodash": ">=4.17.12",
+    "tough-cookie": ">=2.3.3"
+  }
 }
