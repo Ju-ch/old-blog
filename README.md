@@ -2,7 +2,7 @@
 
 本项目fork自[jekyll-theme-H2O](https://github.com/kaeyleo/jekyll-theme-H2O){:target="_blank"} 的 committed ："[19fe6bd](https://github.com/kaeyleo/jekyll-theme-H2O/tree/19fe6bd63cb2eb5fcff446143df65ada47a19874)"
 
-#### [在线预览 Live Demo →](https://ju-ch.github.io)
+#### [在线预览 Live Demo →](https://blog.juchiahau.com/)
 
 ![image.png](https://i.loli.net/2020/02/07/3Vz9qh6xdpyB2Z5.png)
 
