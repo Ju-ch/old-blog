@@ -3,7 +3,7 @@ layout: post
 title: 'H2O theme for Jekyll'
 subtitle: '或许是最漂亮的Jekyll主题'
 date: 2017-04-18 +0800
-cover: 'https://i.loli.net/2020/01/22/heOjoEm56n9IUSy.png'
+cover: 'assets/img/head-H2O.webp'
 tags: [H2O]
 author:
     name: liaokeyu
