@@ -29,7 +29,7 @@ footer:
 author: 'Juchiahau'
 nickname: 'Juch'
 bio: 'Tester，简单乐观爱创造'
-avatar: 'https://jekyll.oss-cn-hongkong.aliyuncs.com/UTOOLS1579871961671.jpeg'
+avatar: '/assets/img/profile.jpg'
 
 # Post excerpts 自定义摘要
 excerpt_separator: <!--excerpt-->
