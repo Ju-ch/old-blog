@@ -67,7 +67,7 @@ sns:
   email: 'mailto:Juch@live.cn?subject=Hallo Juch'
   telegram: '//t.me/Juchiahau'
   twitter: '//twitter.com/JuChiahau'
-  rss: '/rss.xml'
+  rss: '/feed.xml'
 
 # Tags 设置标签
 recommend-tags: true # whether or not display recommend-tags on the sidebar

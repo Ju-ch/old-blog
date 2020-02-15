@@ -158,7 +158,7 @@ sns:
   twitter: '//twitter.com/JuChiahau'
   telegram: '//t.me/Juchiahau'
   github: '//github.com/ju-ch'
-  rss: '/rss.xml'
+  rss: '/feed.xml'
 ```
 
 sns属性可选参数：
