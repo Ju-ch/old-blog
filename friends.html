@@ -1,0 +1,46 @@
+---
+layout: default
+title: Friends
+description: "出门看伙伴，伙伴皆惊忙。"
+header-img: 'assets/img/friendsBack.png'
+---
+
+{% include header.html %}
+
+<div class="g-banner home-banner {{ site.theme-color | prepend: 'banner-theme-' }}" data-theme="{{ site.theme-color }}"style="{% if page.header-img %}background: url({{ page.header-img | relative_url }}) no-repeat center center; background-size: cover;{% endif %}">
+    <h2>{{ page.description }}</h2>
+</div>
+
+
+<main class="tags-content">
+    <ul class="tags-list">
+        <li>
+            <p><b>只添加个人博客，其它类型不加。</b></p><br>
+            <p>申请时直接给我发<a href="mailto:Juch@live.cn?subject=[交换友链]&body=博客名称：%0d%0a%0d%0a博客链接：%0d%0a%0d%0a博客头像:%0d%0a%0d%0a博客描述：%0d%0a%0d%0a" style="color: #1494fb;"><b>邮件</b><i class="iconfont icon-Email_Asset"></i></a>即可，收到邮件后我会很快处理。</p>
+        </li>
+    </ul>
+    <h3>伙伴</h3>
+    <div class="fc-box">
+        {% for fc in site.data.friends %}
+        <a href="{{ fc.link }}">
+            <div class="thumb">
+                <img src="{{ fc.img }}" alt="{{ fc.name }}">
+                <p>{{ fc.name }}</p>
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+
+
+    <style>
+        .tags-list li:hover {
+            transform: none
+        }
+        .g-banner {
+            height: 356px;
+        }
+        .tags-content{
+            margin-top: 0px
+        }
+    </style>
+</main>

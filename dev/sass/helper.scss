@@ -324,3 +324,42 @@ $post-content-w: 720px;
 .post-image:hover{
     transform: scale(1.05);
 }
+
+.fc-box {
+    overflow: hidden;
+    padding: 2em 0em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    a {
+        float:left;
+        margin: 15px 10.8px;
+        .thumb {
+            background-color: #fff;
+            border: 1px solid #e7eaf1;
+            border-radius: 3px;
+            box-sizing: border-box;
+            box-shadow: 0 1px 3px rgba(0,37,55,.06);
+            img {
+                width: 150px;
+                height: 150px;
+            }
+            p {
+                width: 140px;
+                text-align: center;
+                padding: 1rem .25rem;
+                font-weight: 500;
+                color: #333;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                margin: 0;
+            }
+        }
+        &:hover {
+            box-shadow: 1px 0 1rem rgba(0,0,0,.15);
+            transform: translateY(-0.25rem);
+        }
+    }
+}
