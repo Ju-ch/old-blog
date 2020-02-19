@@ -761,8 +761,8 @@
     }
 
     .article-item {
-        .post-cover img {
-            -webkit-filter: brightness(.6);
+        .post-cover {
+            filter: brightness(0.6);
         }
         .post-preview {
             .post-title, .post-subtitle, .post-excerpt {

@@ -952,8 +952,8 @@ a {
     color: #868A94;
     background-color: #2D313A;
     border-color: rgba(255, 255, 255, 0.1); }
-  .night-mode .article-item .post-cover img {
-    -webkit-filter: brightness(0.6); }
+  .night-mode .article-item .post-cover {
+    filter: brightness(0.6); }
   .night-mode .article-item .post-preview .post-title, .night-mode .article-item .post-preview .post-subtitle, .night-mode .article-item .post-preview .post-excerpt {
     color: #868A94; }
   .night-mode .article-item .post-meta .post-tags, .night-mode .article-item .post-meta .post-date {
