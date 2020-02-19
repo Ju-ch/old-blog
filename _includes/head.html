@@ -10,7 +10,7 @@
     <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 150}}{% else %}{{ site.description }}{% endif %}">
     <meta name="title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
     <meta name="author"  content="{% if page.author %}{{ page.author.name }}{% else %}{{ site.author }}{% endif %}">
-    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 150}}{% else %}{{ page.description }}{% endif %}">
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 150}}{% else %}{{ site.description }}{% endif %}">
     <meta name="keywords"  content="{% if page.tags.size > 0 %}{% for tag in page.tags  %}{{ tag }}{% if forloop.last == false %}, {% endif %}{% endfor %}{% else %}{{ site.keyword }}{% endif %}"> 
     <link rel="stylesheet" async href="https://cdn.bootcss.com/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" async href="{{ "/assets/css/github-markdown.min.css" | relative_url }}">
