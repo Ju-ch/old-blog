@@ -1,14 +1,17 @@
-<!-- <com-head> -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
     <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <meta name="author"  content="{{ site.author }}">
-    <!-- Open Graph -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta property="og:site_name" content="{{ site.title }}">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ page.url | prepend: site.url }}">
-    <meta property="og:description" content="{{ site.description }}">
-    <meta property="og:site_name" content="{{ site.title }}">
+    <meta property="og:image" content="{{ site.url }}{% if page.cover %}{{ page.cover }}{% else %}{{ page.header-img }}{% endif %}">
+    <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 150}}{% else %}{{ site.description }}{% endif %}">
+    <meta name="title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta name="author"  content="{% if page.author %}{{ page.author.name }}{% else %}{{ site.author }}{% endif %}">
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 150}}{% else %}{{ page.description }}{% endif %}">
+    <meta name="keywords"  content="{% if page.tags.size > 0 %}{% for tag in page.tags  %}{{ tag }}{% if forloop.last == false %}, {% endif %}{% endfor %}{% else %}{{ site.keyword }}{% endif %}"> 
     <link rel="stylesheet" async href="https://cdn.bootcss.com/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" async href="{{ "/assets/css/github-markdown.min.css" | relative_url }}">
     <link rel="stylesheet" async href="{{ "/assets/css/prism.min.css" | relative_url }}">
@@ -17,4 +20,7 @@
     <link rel="stylesheet" async href="{{ "/assets/css/back_top_button.min.css" | relative_url }}">
     <link rel="stylesheet" async href="//at.alicdn.com/t/font_1624611_81lq4n3l34e.css">
     <script rel="text/javascript" src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
-<!-- </com-head> -->
+    {% if page.layout == 'post' %}
+    {% include anchor.html %}
+    {% endif %}
+</head>

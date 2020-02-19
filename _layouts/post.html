@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
     {% include head.html %}
-    <meta name="description" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-    <meta name="keywords"  content="{% if page.tags.size > 0 %}{% for tag in page.tags  %}{{ tag }}{% if forloop.last == false %}, {% endif %}{% endfor %}{% endif %}">
-    {% include anchor.html %}
-  </head>
 
 <body>
   <input id="nm-switch" type="hidden" value="{{ site.nightMode }}">
