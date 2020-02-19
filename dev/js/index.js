@@ -245,6 +245,12 @@ $(document).ready(function(){
         }
     });
 
+
+    /**
+     * Code blocks --- scrollbar
+     */
+    $('pre').addClass('scrollbar');
+
     /**
      * Initiate TOC
      */
