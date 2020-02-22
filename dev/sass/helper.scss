@@ -382,3 +382,16 @@ $post-content-w: 720px;
         }
     }
 }
+
+.quote {
+    width: 250px;
+    height: 50px;
+    display: flex;
+    margin: auto;
+    a {
+        margin: auto;
+        i {
+            font-size: 2em;
+        }
+    }
+}

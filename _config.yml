@@ -26,6 +26,17 @@ nav:
 footer:
   since: 2017
 
+quote:
+  - name: 图书馆
+    icon: book
+    url: 'https://book.juchiahau.com'
+  - name: 邮局
+    icon: mail
+    url: 'https://mail.juchiahau.com'
+  - name: 数据库
+    icon: db
+    url: 'https://db.juchiahau.com'
+
 # Author 配置博主信息
 author: 'Juchiahau'
 nickname: 'Juch'

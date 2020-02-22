@@ -163,6 +163,16 @@
       transform: translateY(-0.25rem);
       -moz-transform: none; }
 
+.quote {
+  width: 250px;
+  height: 50px;
+  display: flex;
+  margin: auto; }
+  .quote a {
+    margin: auto; }
+    .quote a i {
+      font-size: 2em; }
+
 /** Font **/
 @font-face {
   font-family: "Merriweather";

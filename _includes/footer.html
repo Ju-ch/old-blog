@@ -1,6 +1,15 @@
 <footer class="g-footer">
+  <a href="javascript:scroll(50,50)" title="Top"><i class="iconfont icon-top"></i></a><br>
+  {% if site.quote %}
+  <section class="quote">
+    {% for i in site.quote %}
+    <a href="{{ i.url }}" target="_blank" title="{{ i.name }}">
+      <i class="iconfont icon-{{ i.icon }}"></i>
+    </a>
+    {% endfor %}
+  </section>
+  {% endif %}
   <section>
-    <a href="javascript:scroll(50,50)" title="Top"><i class="iconfont icon-top"></i></a><br>
      ©
     {% assign current = "now" | date: "%Y" | plus: 0%}
     {% unless site.footer.since and site.footer.since == current %}
