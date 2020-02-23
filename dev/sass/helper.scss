@@ -291,7 +291,7 @@ $post-content-w: 720px;
     width: 7px;
     height: 7px;
     border-radius: 4px;
-    background-color: white;
+    background-color: #fff0;
 }
 /*滚动条两端的箭头*/
 .scrollbar::-webkit-scrollbar-button{
@@ -307,7 +307,7 @@ $post-content-w: 720px;
 }
 /*滚动条中可以拖动的那部分*/
 .scrollbar::-webkit-scrollbar-thumb{
-    background-color: white;
+    background-color: #959da5;
     border-radius: 4px;
 }
 /*变角部分*/
