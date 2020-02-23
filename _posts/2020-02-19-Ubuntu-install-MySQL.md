@@ -47,7 +47,7 @@ sudo mysql_secure_installation
 
 从那里，您可以按Y，然后按Enter以接受所有后续问题的默认设置。这将删除一些匿名用户和测试数据库，禁用远程**root**登录，并加载这些新规则，以便MySQL立即尊重您所做的更改。
 
-要初始化MySQL数据目录，对于5.7之前的版本，应使用`mysql_install_db`，而对于5.7及更高版本，应使用mysqld --initialize。但是，如果按照[步骤1](#step---1-安装mysql)所述从Debian发行版中安装了MySQL，则数据目录将自动初始化；否则，将自动初始化数据目录。您无需做任何事情。如果仍然尝试运行该命令，则会看到以下错误：
+要初始化MySQL数据目录，对于5.7之前的版本，应使用**mysql_install_db**，而对于5.7及更高版本，应使用`mysqld --initialize`。但是，如果按照[步骤1](#step---1-安装mysql)所述从Debian发行版中安装了MySQL，则数据目录将自动初始化；否则，将自动初始化数据目录。您无需做任何事情。如果仍然尝试运行该命令，则会看到以下错误：
 ``` output
 mysqld: Can't create directory '/var/lib/mysql/' (Errcode: 17 - File exists)
 . . .
