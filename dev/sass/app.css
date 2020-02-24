@@ -690,7 +690,12 @@ a {
   min-height: 40px;
   padding: 20px 0;
   border-top: 1px solid #E7EAF1;
-  text-align: center; }
+  text-align: center;
+  opacity: 1;
+  background-image: url(/assets/img/cloud-dark.svg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover; }
   .g-footer section {
     font-size: 14px;
     line-height: 20px;
@@ -868,7 +873,12 @@ a {
 
 .author-detail {
   position: relative;
-  top: -35px; }
+  top: -35px;
+  opacity: 1;
+  background-image: url(/assets/img/cloud-dark.svg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover; }
   .author-detail .comment {
     margin-bottom: 60px; }
 

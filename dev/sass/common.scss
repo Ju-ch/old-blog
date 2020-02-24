@@ -375,6 +375,11 @@
     padding: 20px 0;
     border-top: 1px solid #E7EAF1;
     text-align: center;
+    opacity: 1;
+    background-image: url(/assets/img/cloud-dark.svg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
     section {
         font-size: 14px;
         line-height: 20px;
@@ -577,6 +582,11 @@
 .author-detail {
     position: relative;
     top: -35px;
+    opacity: 1;
+    background-image: url(/assets/img/cloud-dark.svg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
     .comment {
         margin-bottom: 60px;
     }
