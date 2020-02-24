@@ -220,6 +220,7 @@ $(document).ready(function(){
 
         if (hour <= 6 || hour >= 18) {
             el.addClass(className);
+            $('.loading').addClass(className);
         }
     }
 
