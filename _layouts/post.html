@@ -57,11 +57,7 @@
 
   <section class="author-detail">
     <section class="post-footer-item author-card">
-      <div class="avatar">
-        <a href="{{ site.url }}">
-          <img src="{{ site.avatar | relative_url }}" alt="">
-        </a>
-      </div>
+      <div class="avatar" style="background: url('{{ site.avatar | relative_url }}');background-size: cover;"></div>
       <div class="author-name" rel="author">{{ site.author }}</div>
       <div class="bio">
         <p>{{ site.bio }}</p>
