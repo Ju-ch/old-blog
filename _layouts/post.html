@@ -19,7 +19,7 @@
       <h1>{{ page.title }}</h1>
       <div class="post-meta">
         <a href="{% if page.author %}{{ page.author.url }}{% else %}{{ site.url }}{% endif %}" class="post-meta-item"
-        title="author"><i
+        title="author" target="_blank"><i
           class="iconfont icon-author"></i>{% if page.author %}{{ page.author.name }}{% else %}{{ site.author }}{% endif %}</a>
       <time class="post-meta-item" datetime="{{ page.date | date:"%y-%m-%d" }}"
         title="最后编辑于{% if page.overwrite %}{{ page.overwrite | date:'%Y-%m-%d' }}{% else %}{{ page.date | date:'%Y-%m-%d' }}{% endif %}"><i
