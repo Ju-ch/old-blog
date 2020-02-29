@@ -855,6 +855,22 @@
         blockquote {
             border-left-color: #555A61;
         }
+        table {
+            th {
+                font-weight: 600;
+              }
+            th, td {
+                padding: 6px 13px;
+                border: 1px solid #dfe2e55e;
+            }
+            tr {
+                background-color: #0000005e;
+                border-top: 1px solid #c6cbd15e;
+              }
+            tr:nth-child(2n) {
+                background-color: #3c3c3c5e;
+              }
+        }
     }
     .read-next-item {
         background-color: #484D59;
