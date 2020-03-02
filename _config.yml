@@ -76,7 +76,7 @@ postPatterns: 'circuitBoard'
 # url: email, weibo, twitter, github, facebook, medium, linkedin
 sns:
   github: '//github.com/ju-ch'
-  email: 'mailto:Juch@live.cn?subject=Hallo Juch'
+  email: 'mailto:admin@juchiahau.com?subject=Hallo Juch'
   telegram: '//t.me/Juchiahau'
   twitter: '//twitter.com/JuChiahau'
   rss: '/feed.xml'

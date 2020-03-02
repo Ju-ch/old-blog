@@ -154,7 +154,7 @@ exclude: ['node_modules', 'dev', 'package.json', '自定义的文件夹名字']
 ```
 # SNS settings 配置社交网站url
 sns:
-  email: 'mailto:Juch@live.cn?subject=Hallo Juch'
+  email: 'mailto:admin@juchiahau.com?subject=Hallo Juch'
   twitter: '//twitter.com/JuChiahau'
   telegram: '//t.me/Juchiahau'
   github: '//github.com/ju-ch'
