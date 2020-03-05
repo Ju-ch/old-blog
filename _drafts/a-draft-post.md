@@ -19,3 +19,6 @@ excerpt
 
 [url](URL){:target="_blank"}
 ![image](URL){:class="post-image"  height="256px"}
+
+[button](URL){:target="_blank"}
+{:class="btn [default/warning/danger/blue/black]"}
