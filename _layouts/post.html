@@ -45,6 +45,7 @@
       <toc id="toc" style="visibility:hidden;" class="scrollbar"></toc>
       <i id="toc-show" class="iconfont icon-swap" style="position: fixed;left: 10px;bottom: 10px;display: none;"></i>
       {% endif %}
+      {% assign content = content | replace: "<img src", "<img class='post-image lazyload' src='/assets/img/loading.gif' data-src" %}
       {{ content }}
     </article>
 
