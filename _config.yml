@@ -27,6 +27,9 @@ footer:
   since: 2017
 
 quote:
+  - name: OneIndex
+    icon: onedrive
+    url: 'https://one.juchiahau.com'
   - name: 图书馆
     icon: book
     url: 'https://book.juchiahau.com'
