@@ -1,10 +1,10 @@
 ## jekyll-theme-H2O
 
-本项目fork自[jekyll-theme-H2O](https://github.com/kaeyleo/jekyll-theme-H2O){:target="_blank"} 的 committed ："[19fe6bd](https://github.com/kaeyleo/jekyll-theme-H2O/tree/19fe6bd63cb2eb5fcff446143df65ada47a19874)"
+本项目fork自[jekyll-theme-H2O](https://github.com/kaeyleo/jekyll-theme-H2O) 的 committed ："[19fe6bd](https://github.com/kaeyleo/jekyll-theme-H2O/tree/19fe6bd63cb2eb5fcff446143df65ada47a19874)"
 
 #### [在线预览 Live Demo →](https://blog.juchiahau.com/)
 
-![image.png](https://i.loli.net/2020/02/07/3Vz9qh6xdpyB2Z5.png)
+![image.png](assets/img/readme/HEAD.png)
 
 如果你喜欢这个博客模板，请在右上角⭐️star一下，非常感谢～
 
@@ -22,6 +22,7 @@
 - 文章标签索引
 - 博客文章搜索
 - 复制文章内容自动添加版权
+- 通过csv直接添加友链
 
 ### Usage 快速开始
 
@@ -29,10 +30,10 @@
 
 > H2O主题基于Jekyll 3.2.1版本，不同版本之间可能存在部分差异，具体请参考[官方更新文档](https://jekyllrb.com/news/)
 
-点击右上角Fork按钮在你的Github上创建分支，或者```clone```到本地。
+点击右上角Fork按钮在你的Github上创建分支，或者`clone`到本地。
 
 ```
-git clone https://github.com/kaeyleo/jekyll-theme-H2O.git 
+git clone git@github.com:Ju-ch/ju-ch.github.io.git 
 ```
 
 最后，在命令行输入 ```bundle exec jekyll server``` 开启服务，就能在本地预览主题了。
@@ -81,7 +82,7 @@ baseurl: ''
 
 #### 写一篇文章
 
-文章一般都放在`_posts`文件夹里，每篇文章的开头都需要设置一些头信息(不过这在草稿里面已经写好，只需复制一份草稿即可)：
+文章一般都放在`_posts`文件夹里，每篇文章的开头都需要设置一些头信息(不过这在草稿`_drafts`里面已经写好，只需复制一份草稿即可)：
 
 ```
 ---
@@ -100,7 +101,7 @@ toc: #boolean
 ---
 ```
 
-* 建议文章先在草稿里写好再放到`_post`文件夹下面
+* 建议文章先在草稿`_drafts`里写好再放到`_post`文件夹下面
 
 > 如何预览草稿箱里的文章？
 >```
@@ -141,7 +142,7 @@ exclude: ['node_modules', 'dev', 'package.json', '自定义的文件夹名字']
 
 #### 侧边栏
 
-![image.png](https://i.loli.net/2020/02/08/91xyVQmLvMj7osU.png)
+![image.png](assets/img/readme/侧边栏.webp)
 
 侧边栏分为两个部分：【个人简介】和【推荐标签】。当屏幕宽度小于960px时，侧边栏会被隐藏。
 
@@ -173,7 +174,7 @@ telegram | `telegram`
 email | `email`
 google+ | `google`
 
-* sns的图标全部在[iconfont](https://www.iconfont.cn/manage/index?manage_type=myprojects&projectId=1621769)里面，相关的图标配置则在[share.scss](dev/sass/share.scss)里，有需要的童鞋可以在iconfont里制作自己的项目然后改一下**share.scss**文件即可。
+* sns的图标全部在[iconfont](https://www.iconfont.cn)里面，相关的图标配置则在[share.scss](dev/sass/share.scss)里，有需要的童鞋可以在iconfont里制作自己的项目然后改一下[**share.scss**](dev/sass/share.scss)文件即可。
 
 #### 个人简介
 
@@ -207,7 +208,7 @@ Tags配置说明：
 
 #### 文章搜索
 
-![image.png](https://i.loli.net/2020/02/08/B3TEj7axZSikd8P.png)
+![image.png](assets/img/readme/文章搜索.webp)
 
 基于Jekyll服务器生成文章索引文件 `search.json` 为博客提供搜索服务。输入文章标题或与文章标签相关的关键字即可。
 
@@ -229,7 +230,7 @@ search: true
 
 很多知名网站如[MDN](https://developer.mozilla.org/)、[css-tricks](https://css-tricks.com/)也在用它，就连 JavaScript 之父 [Brendan Eich](https://brendaneich.com/) 也在个人博客上使用。
 
-![image.png](https://i.loli.net/2020/01/22/adSczuKlLInXtg4.png)
+![image.png](assets/img/readme/代码高亮.png)
 
 遵循 [HTML5](https://www.w3.org/TR/html5/grouping-content.html#the-pre-element) 标准，Prism 使用语义化的 `<pre>` 元素和 `<code>` 元素来标记代码区块：
 
@@ -243,19 +244,7 @@ search: true
 	p { color: red }
 	```
 
-支持语言：
-
-- HTML
-- CSS
-- Sass
-- JavaScript
-- CoffeeScript
-- Java
-- C-like
-- Swift
-- PHP
-- Go
-- Python
+支持的语言列表：<https://prismjs.com/download.html#themes=prism>
 
 #### 夜间模式
 
@@ -268,7 +257,7 @@ nightMode: true
 
 #### 主题皮肤
 
-![image.png](https://i.loli.net/2020/01/22/KOSpyClWIXkGtHQ.png)
+![image.png](assets/img/readme/主题皮肤.png)
 
 支持两种主题颜色蓝色（默认）和粉色
 
@@ -292,7 +281,7 @@ header-img: assets/img/banner.jpg
 
 #### 头图底纹
 
-![image.png](https://i.loli.net/2020/01/22/jC6JmuAZ4UhIgL1.png)
+![image.png](assets/img/readme/底纹.png))
 
 在没有图片的情况下单纯显示颜色会不会太无趣了点？于是想到了加入底纹元素，底纹素材是SVG格式的（保存在css样式里），加载比图片快很多。六种底纹（电路、食物、云海、钻石等等）供你选择，配置如下：
 
@@ -312,7 +301,7 @@ postPatterns: 'circuitBoard'
 圈圈叉叉 | `ticTacToe`
 中国风：云海 | `seaOfClouds`
 
-其中post的头信息中也可以自定义底纹了，详见[草稿](_drafts/a-draft-post.md)
+其中post的头信息中也可以自定义底纹，详见[草稿](_drafts/a-draft-post.md)
 
 #### 自定义
 
@@ -324,46 +313,33 @@ postPatterns: 'circuitBoard'
 
 在了解H2O主题的目录结构之前，确保你对[Jekyll目录结构](http://jekyll.com.cn/docs/structure/)有所了解。
 
-```
+``` bash
 	.
-	├── _config.yml # 配置文件
-	├── _drafts # 草稿箱
-	├── _includes # 页面组件方便重用
-	|   ├── footer.html # 页脚
-	|   └── head.html # html文档的头部内容
-	|   └── header.html # 顶部菜单栏
-	|   └── pageNav.html # 文章列表分页组件
-	├── _layouts # 布局模板
-	|   ├── default.html # 默认模板
-	|   └── post.html # 文章页面模板
-	├── _posts # 这里放文章
-	|   ├── 2017-05-03-postName.md # 命名格式：年-月-日-文章标题.md
-	|   └── 2007-02-21-life-on-mars.md
-	├── _site # Jekyll将源码处理后生成的站点文件，里面的内容可直接发布
-	├── assets # 存放用于线上环境的静态资源，如需修改css和js文件请到dev文件夹
-	|   ├── css # dev文件夹中sass编译后的样式文件
-	|   └── fonts # 字体文件
-	|   └── icons # 图标文件
-	|   └── img #  图片文件
-	|   └── js # dev文件夹中处理后的脚本文件
-	├── dev # 开发文件
-	|   ├── js # 存放脚本源码
-	|   └── sass # 样式源码
-	|       └── app.scss # 整合下面的所有样式文件
-	|       └── base.scss # 引入字体、Reset部分样式
-	|       └── common.scss # 模板的主要样式
-	|       └── helper.scss # 工具样式
-	|       └── github-markdown.scss # 文章的样式
-	|       └── layouts.scss # 响应式布局
-	|       └── prism.scss # 代码块的样式
-	|       └── share.scss # 分享按钮的布局和图标配置
-	└── gulpfile.js # 自动化任务脚本
-	└── index.html # 首页
-	└── archives.html # post时间线页面
-	└── leave_comments.html # 留言页面,使用Valine
-	└── tags.html # 标签页面
-	└── 404.html # 404页面
-	└── package.json # nmp的依赖项
+	├── assets		#存放静态资源
+	│   ├── css		#所有css文件
+	│   ├── fonts	#所有字体文件
+	│   ├── img		#所有图片
+	│   └── js		#所有js文件
+	├── _config.yml		#配置文件
+	├── _data	#存放数据文件
+	├── dev		#所有开发文件，编译后导出到 asstes
+	├── _drafts		#草稿箱
+	├── favicon.ico		#网页图标
+	├── feed.xml		#rss订阅
+	├── gulpfile.js		#自动化任务脚本，编译dev文件夹内容
+	├── _includes		#可重用页面组件
+	│   ├── footer.html		#页脚说明
+	│   ├── header.html		#顶栏
+	│   ├── head.html		#html中的<head>标签
+	│   └── pageNav.html	#文章列表分页组件		
+	├── index.html		#首页
+	├── _layouts	#布局模板
+	│   ├── default.html	#默认模板
+	│   └── post.html		#文章模板
+	├── package.json	#npm
+	├── _posts		#这里放文章
+	│   └── 2017-04-18-hello-jekyll.md		#命名格式
+	└── sitemap.xml		#站点地图
 ```
 
 值得注意的是，css及js的源码都在 `dev` 文件夹中，每一次保存 gulp 都会对它们进行处理并保存到 `assets` 文件夹以供 `_site` 上线环境使用。
@@ -372,7 +348,7 @@ postPatterns: 'circuitBoard'
 
 [Valine](https://valine.js.org)是一个第三方社交评论插件，体验相当不错。
 
-![image.png](https://i.loli.net/2020/02/08/IAsj6FCOhr4EkDZ.png)
+![image.png](assets/img/readme/valine.png)
 
 在配置文件 `_config.yml` 中找到comments的相关配置，设置 `valine` 参数为 `true` 打开评论功能（ `false` 为关闭）。
 
@@ -399,14 +375,13 @@ avatar | [Gravatar 头像展示方式](https://valine.js.org/avatar.html)
 ```
 # Share
 social-share: true # 开启或者关闭分享功能
-social-share-items: ['wechat', 'weibo', 'douban','twitter']
 ```
 
 ### Contribution 贡献
 
 Any types of contribution are welcome. Thanks.
 
-接受各种形式的贡献，包括不限于提交问题与需求，修复代码。等待您的 ```Pull Request```
+接受各种形式的贡献，包括不限于提交问题与需求，修复代码。等待您的 `Pull Request`
 
 #### 感谢参与代码贡献的伙伴
 
