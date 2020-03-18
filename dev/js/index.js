@@ -286,4 +286,33 @@ $(document).ready(function(){
         $("#toc-close").slideToggle();
     });
 
+    document.onkeydown = function () {
+        var info = "叮叮叮~ 😃"
+        var e = window.event || arguments[0];
+        if (e.keyCode == 123) {
+            alert(info);
+            return false;
+        }
+        if ((e.ctrlKey) && (e.keyCode == 65)) {
+            alert(info);
+            return false;
+        }
+        if ((e.ctrlKey) && (e.shiftKey) && (e.keyCode == 73)) {
+            alert(info);
+            return false;
+        }
+        if ((e.ctrlKey) && (e.keyCode == 85)) {
+            alert(info);
+            return false;
+        }
+        if ((e.ctrlKey) && (e.keyCode == 83)) {
+            alert(info);
+            return false;
+        }
+    }
+    window.oncontextmenu = function (e) {
+        //取消默认的浏览器自带右键
+        e.preventDefault();
+    }
+
 });
