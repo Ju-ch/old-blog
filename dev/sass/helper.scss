@@ -353,6 +353,9 @@ $post-content-w: 720px;
             border-radius: 3px;
             box-sizing: border-box;
             box-shadow: 0 1px 3px rgba(0,37,55,.06);
+            overflow: hidden;
+            border-top-left-radius: .5rem;
+            border-top-right-radius: .5rem;
             img {
                 width: 150px;
                 height: 150px;
