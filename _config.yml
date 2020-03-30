@@ -36,9 +36,6 @@ quote:
   - name: 邮局
     icon: mail
     url: 'https://mail.juchiahau.com'
-  - name: 数据库
-    icon: db
-    url: 'https://db.juchiahau.com'
   - name: Team Drive
     icon: gdrive
     url: 'https://drive.juchiahau.com'
