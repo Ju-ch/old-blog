@@ -301,6 +301,18 @@ $(document).ready(function(){
             alert(info);
             return false;
         }
+        if ((e.ctrlKey) && (e.shiftKey) && (e.keyCode == 74)) {
+            alert(info);
+            return false;
+        }
+        if ((e.ctrlKey) && (e.shiftKey) && (e.keyCode == 80)) {
+            alert(info);
+            return false;
+        }
+        if ((e.ctrlKey) && (e.keyCode == 80)) {
+            alert(info);
+            return false;
+        }
         if ((e.ctrlKey) && (e.keyCode == 85)) {
             alert(info);
             return false;
