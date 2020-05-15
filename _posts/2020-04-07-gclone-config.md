@@ -4,7 +4,7 @@ title:  "gclone配置教程"
 date: 2020-04-07 22:57:47 +0800
 overwrite: 2020-04-08 16:57:17 +0800
 cover: /assets/img/gclone/gclone.png
-tags: [rclone,gclone,GoogleDrive]
+tags: [rclone,gclone,GoogleDrive,环境搭建]
 toc: true
 ---
 

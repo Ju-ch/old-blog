@@ -3,7 +3,7 @@ layout: post
 title:  "如何在Ubuntu 18.04上安装MySQL"
 date: 2020-02-19 +0800 
 cover: '/assets/img/head-MySQL.jpg'
-tags: [MySQL,Ubuntu]
+tags: [MySQL,Ubuntu,环境搭建]
 toc: true
 ---
 
