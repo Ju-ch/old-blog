@@ -84,7 +84,12 @@ startup.bat
 注意这里花括号搞起来的是**webapps**目录里Jenkins的`war`包的文件名
 ![image](/assets/img/AntJJ/2020-05-16_0014.png)
 
-这个时候也不要闲着，建一个Jenkins项目目录，结构如下：
+一般来说，默认的Jenkins插件源在国内都很慢，不用点魔法根本不能玩，对于不会魔法的同学我也要妙招要写出来。
+* 找到Jenkins根目录的**hudson.model.UpdateCenter.xml**文件，把源地址改为**http://mirror.xmission.com/jenkins/updates/update-center.json**
+
+* 编辑**Jenkins\updates\default.json**，把所有的`updates.jenkins-ci.org/download`替换为`mirrors.tuna.tsinghua.edu.cn/jenkins`，把`http://www.google.com/`替换为`http://www.baidu.com/`。
+
+然后再去安装插件就超级快了，安装插件的时候也不要闲着，来建一个Jenkins项目目录，结构如下：
 ```
 .
 └── JmeterAutoTest //项目根目录
