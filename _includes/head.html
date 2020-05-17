@@ -23,4 +23,7 @@
     {% if page.layout == 'post' %}
     {% include anchor.html %}
     {% endif %}
+    {% if jekyll.environment == 'production' %}
+	{% include analytics.html %}
+    {% endif %}
 </head>
