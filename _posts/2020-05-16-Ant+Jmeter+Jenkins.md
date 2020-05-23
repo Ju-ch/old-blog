@@ -3,7 +3,7 @@ layout: post
 title:  "Ant Jmeter Jenkins 持续集成环境"
 subtitle: '快速搭建，一趟成功'
 date: 2020-05-16 11:33:46 +0800
-overwrite:  +0800
+overwrite: 2020-05-16 +0800
 cover: /assets/img/AntJJ/HEAD.png
 tags: [Ant,Jmeter,Jenkins,环境搭建]
 toc: true
