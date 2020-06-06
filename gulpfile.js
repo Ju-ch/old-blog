@@ -23,12 +23,6 @@ gulp.task('prism.js', () =>
         .pipe(gulp.dest('assets/js'))
 );
 
-gulp.task('social-share.js', () =>
-    gulp.src('dev/js/social-share.js')
-        .pipe(uglify())
-        .pipe(rename({ suffix: '.min' }))
-        .pipe(gulp.dest('assets/js'))
-);
 
 gulp.task('Valine.js', () =>
     gulp.src('dev/js/Valine.js')
@@ -51,14 +45,6 @@ gulp.task('app.css', () =>
     gulp.src('dev/sass/app.scss')
         .pipe(sass())
         .pipe(gulp.dest('dev/sass'))
-        .pipe(cleanCSS())
-        .pipe(rename({ suffix: '.min' }))
-        .pipe(gulp.dest('assets/css'))
-);
-
-gulp.task('share.css', () =>
-    gulp.src('dev/sass/share.scss')
-        .pipe(sass())
         .pipe(cleanCSS())
         .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('assets/css'))
@@ -92,9 +78,9 @@ gulp.task('img', () =>
         .pipe(gulp.dest('assets/img'))
 );
 
-gulp.task('sass', ['app.css', 'share.css', 'prism.css', 'github-markdown.css',]);
+gulp.task('sass', ['app.css', 'prism.css', 'github-markdown.css',]);
 
-gulp.task('script', ['index.js', 'social-share.js', 'prism.js', 'Valine.js', 'toc.js']);
+gulp.task('script', ['index.js', 'prism.js', 'Valine.js', 'toc.js']);
 
 gulp.task('default', function () {
     gulp.run('sass', 'script', 'img');

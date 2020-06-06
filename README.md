@@ -61,7 +61,8 @@ git clone git@github.com:Ju-ch/ju-ch.github.io.git
 	- [自定义](#自定义)
 - 集成服务
 	- [Valine](#Valine)
-	- [Share.js](#sharejs)
+	- ~~[Share.js](#sharejs)~~
+	- [AddThis](https://www.addthis.com/)
 
 You can easily get started by modifying _config.yml
 
@@ -160,20 +161,6 @@ sns:
   github: '//github.com/ju-ch'
   rss: '/feed.xml'
 ```
-
-sns属性可选参数：
-
-社交网站 | 参数
---------|----
-推特 | `twitter`
-Github | `github`
-Medium | `medium`
-v2ex | `v2ex`
-telegram | `telegram`
-email | `email`
-google+ | `google`
-
-* sns的图标全部在[iconfont](https://www.iconfont.cn)里面，相关的图标配置则在[share.scss](dev/sass/share.scss)里，有需要的童鞋可以在iconfont里制作自己的项目然后改一下[**share.scss**](dev/sass/share.scss)文件即可。
 
 #### 个人简介
 
@@ -366,10 +353,6 @@ app_id | `从LeanCloud的应用中得到的appId`
 app_key | `从LeanCloud的应用中得到的APP Key`
 placeholder | `评论框占位提示符`
 avatar | [Gravatar 头像展示方式](https://valine.js.org/avatar.html)
-
-#### Share.js
-
-为了让文章更方便地分享，使用了第三方分享插件[Share.js](https://github.com/overtrue/share.js)，支持一键分享到微博、QQ空间、QQ好友、微信、腾讯微博、豆瓣、Facebook、Twitter、Linkedin、reddit等社交网站。
 
 ```
 # Share

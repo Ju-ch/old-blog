@@ -937,7 +937,7 @@ a {
   float: left;
   position: relative;
   left: 50%; }
-  .social-share-wrapper .social-share {
+  .social-share-wrapper .addthis_inline_share_toolbox {
     position: relative;
     left: -50%; }
 
