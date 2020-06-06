@@ -16,18 +16,22 @@ postPatterns: glamorous
         <li>
         {% if site.recommend-tags and site.tags.size>0 %}
             {% for tag in site.tags %}
+                {% unless tag contains 'MEMO' %}            
             <a href="#{{ tag[0] }}" class="tag">{{ tag[0]}}</a>
+                {% endunless %}
             {% endfor %}
         {% endif %}
         </li>
         
         {% for tag in site.tags %}
+        {% unless tag contains 'MEMO' %}    
         <li>
             <span class="tag-name" id="{{ tag[0] }}">「{{ tag[0] }}」</span>
             {% for post in tag[1] %}
             <a class="tag-post" href="{{ post.url | relative_url }}" target="_blank" title="{{ post.title }}">{{ post.title }}</a>
             {% endfor %}
         </li>
+        {% endunless %}
         {% endfor%}
     </ul>
 </main>

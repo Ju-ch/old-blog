@@ -15,6 +15,7 @@ header-img: "/assets/img/hero.jpg"
 <main class="g-container home-content">
     <div class="article-list">
         {% for post in paginator.posts %}
+        {% unless post.tags contains 'MEMO' %}
         <article class="article-item">
             {% if post.cover %}
             <div class="post-cover">
@@ -43,6 +44,7 @@ header-img: "/assets/img/hero.jpg"
                 <time class="post-meta-item post-date" datetime="{{ post.date | date:"%y-%m-%d" }}" title="最后编辑于{% if post.overwrite %}{{ post.overwrite | date:'%Y-%m-%d' }}{% else %}{{ post.date | date:'%Y-%m-%d' }}{% endif %}"><i class="iconfont icon-date"></i>{{ post.date | date_to_string }}</time>
             </footer>
         </article>
+        {% endunless %}
         {% endfor %}
 
         {% if paginator.total_pages > 1 %}
