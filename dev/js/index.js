@@ -257,7 +257,7 @@ $(document).ready(function(){
      */
     $('#toc').toc();
     
-    if ($(window).width() > 695) {
+    if ($(window).width() > 1200) {
         var toc = $('#toc');
         $(document).scroll(function () {
             var scrollTop = $(this).scrollTop();
