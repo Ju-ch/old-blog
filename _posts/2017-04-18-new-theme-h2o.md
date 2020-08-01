@@ -4,7 +4,7 @@ title: 'H2O theme for Jekyll'
 subtitle: '或许是最漂亮的Jekyll主题'
 date: 2017-04-18 +0800
 cover: 'assets/img/head-H2O.webp'
-tags: [H2O]
+tags: [H2O,转载]
 author:
     name: liaokeyu
     url: "//liaokeyu.com"
