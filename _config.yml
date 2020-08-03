@@ -2,7 +2,7 @@
 title: 'Juch Blog'
 description: '很高兴能在这里与你分享我对技术和生活的思考。'
 keyword: 'Juch, Tester'
-url: 'https://blog.juchiahau.com'
+url: 'https://blog.vmert.com'
 
 # when build blog on server, if you don't need baseurl, you should leave this value blank.
 # 在服务器上建站时，如果你不需要子域名，请将这一格留空
@@ -30,16 +30,16 @@ footer:
 quote:
   - name: OneIndex
     icon: onedrive
-    url: 'https://juchiahau.com/one'
+    url: 'https://vmert.com/one'
   - name: 图书馆
     icon: book
-    url: 'https://book.juchiahau.com'
+    url: 'https://book.vmert.com'
   - name: 邮局
     icon: mail
-    url: 'https://mail.juchiahau.com'
+    url: 'https://mail.vmert.com'
   - name: Team Drive
     icon: gdrive
-    url: 'https://drive.juchiahau.com'
+    url: 'https://drive.vmert.com'
 
 # Author 配置博主信息
 author: 'Juchiahau'
@@ -80,7 +80,7 @@ postPatterns: 'circuitBoard'
 # url: email, weibo, twitter, github, facebook, medium, linkedin
 sns:
   github: '//github.com/ju-ch'
-  email: 'mailto:support@juchiahau.com'
+  email: 'mailto:support@vmert.com'
   telegram: '//t.me/Juchiahau'
   rss: '/feed.xml'
 

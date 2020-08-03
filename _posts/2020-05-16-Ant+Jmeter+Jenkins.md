@@ -118,8 +118,8 @@ startup.bat
     <property name="jmeter.result.jtlName" value="${jmeter.result.jtl.dir}/${ReportName}${time}.jtl" />
     <property name="jmeter.result.htmlName" value="${jmeter.result.html.dir}/${ReportName}${time}.html" />
     <!-- 接收测试报告的邮箱 -->
-    <property name="mail_from" value="support@juchiahau.com" />
-    <property name="mail_to" value="juch@juchiahau.com" />
+    <property name="mail_from" value="support@vmert.com" />
+    <property name="mail_to" value="juch@vmert.com" />
     <target name="all">
         <antcall target="test" />
         <antcall target="report" />
@@ -158,7 +158,7 @@ startup.bat
     <!-- 发送邮件 -->
 	<target name="send" >
         <!-- 填写你发送邮件的邮箱的STMP信息 -->
-        <mail mailhost="smtp.office365.com" mailport="25" subject="Test Report!" messagemimetype="text/html" user="support@juchiahau.com" password="****************" >
+        <mail mailhost="smtp.office365.com" mailport="25" subject="Test Report!" messagemimetype="text/html" user="support@vmert.com" password="****************" >
         <from address="${mail_from}"/>
         <to address="${mail_to}"/>
         <message>This email was sent automatically by ANT. Please check the automation test report. Thank you!</message>

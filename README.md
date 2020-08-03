@@ -2,7 +2,7 @@
 
 本项目fork自[jekyll-theme-H2O](https://github.com/kaeyleo/jekyll-theme-H2O) 的 committed ："[19fe6bd](https://github.com/kaeyleo/jekyll-theme-H2O/tree/19fe6bd63cb2eb5fcff446143df65ada47a19874)"
 
-#### [在线预览 Live Demo →](https://blog.juchiahau.com/)
+#### [在线预览 Live Demo →](https://blog.vmert.com/)
 
 ![image.png](assets/img/readme/HEAD.png)
 
@@ -156,7 +156,7 @@ exclude: ['node_modules', 'dev', 'package.json', '自定义的文件夹名字']
 ```
 # SNS settings 配置社交网站url
 sns:
-  email: 'mailto:support@juchiahau.com?subject=Hallo Juch'
+  email: 'mailto:support@vmert.com?subject=Hallo Juch'
   telegram: '//t.me/Juchiahau'
   github: '//github.com/ju-ch'
   rss: '/feed.xml'
