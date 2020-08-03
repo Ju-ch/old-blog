@@ -3,7 +3,7 @@ layout: post
 title: 'H2O theme for Jekyll'
 subtitle: '或许是最漂亮的Jekyll主题'
 date: 2017-04-18 +0800
-cover: 'assets/img/head-H2O.webp'
+cover: 'assets/img/HEAD/head-H2O.webp'
 tags: [H2O,转载]
 author:
     name: liaokeyu
@@ -17,15 +17,15 @@ toc: true
 
 [源码及使用文档 →](https://github.com/kaeyleo/jekyll-theme-H2O)
 
-![](https://i.loli.net/2020/01/22/wYM1lJR9IqsybgG.png)
+![](https://i.loli.net/2020/01/22/wYM1lJR9IqsybgG.webp)
 
 新主题名叫"H2O"，基于Jekyll 3.0.x（使用```gem update jekyll```升级Jekyll），Markdown的代码高亮不再支持pygments转而使用rouge，咱已经默认配置了 ```highlighter: rouge``` 。用到的技术栈也很简单：引入jQuery类库，使用Sass编写样式，使用Gulp来编译Sass、合并压缩css、js，开源在[Github](https://github.com/kaeyleo/jekyll-theme-H2O)上，稍作配置即可用于你的Jekyll博客上。
 
-![Design with Sketch](https://i.loli.net/2020/01/22/yTG5vZcLohHqSAV.png)
+![Design with Sketch](https://i.loli.net/2020/01/22/yTG5vZcLohHqSAV.webp)
 
 使用Sketch完成H2O主题的原型设计
 
-![My Jekyll themes](https://i.loli.net/2020/01/22/LdPvAszXi9oVlgw.png)
+![My Jekyll themes](https://i.loli.net/2020/01/22/LdPvAszXi9oVlgw.webp)
 
 比之前漂亮不少吧，下面聊聊H2O的新特性。
 
@@ -35,7 +35,7 @@ toc: true
 
 支持两种主题配色——蓝色和粉色。
 
-![](https://i.loli.net/2020/01/22/KOSpyClWIXkGtHQ.png)
+![](https://i.loli.net/2020/01/22/KOSpyClWIXkGtHQ.webp)
 
 ### 侧边栏
 
@@ -45,11 +45,11 @@ toc: true
 
 使用阿里的图标管理平台[Iconfont](http://iconfont.cn/)整理了一套<strike>墙内外</strike>常用的社交图标，包括微博、知乎、掘金、简书、Github等十多个网站，鼠标悬停会显示该站的主题色。
 
-![social iconfont](https://i.loli.net/2020/01/22/sc4h8IfyZxlRrOV.png)
+![social iconfont](https://i.loli.net/2020/01/22/sc4h8IfyZxlRrOV.webp)
 
 ### 前后文导航
 
-![Next post navigator](https://i.loli.net/2020/01/22/nVGOg2jFpXZyoLa.png)
+![Next post navigator](https://i.loli.net/2020/01/22/nVGOg2jFpXZyoLa.webp)
 
 ### 自定义文章封面
 
@@ -59,7 +59,7 @@ toc: true
 
 在没有图片的情况下单纯显示颜色会不会太无趣了点？于是想到了加入底纹元素，底纹素材是SVG格式的（保存在css样式里），加载比图片快很多。
 
-![](https://i.loli.net/2020/01/22/jC6JmuAZ4UhIgL1.png)
+![](https://i.loli.net/2020/01/22/jC6JmuAZ4UhIgL1.webp)
 
 ### 代码高亮
 
@@ -67,7 +67,7 @@ toc: true
 
 很多知名网站如[MDN](https://developer.mozilla.org/)、[css-tricks](https://css-tricks.com/)也在用它，JavaScript 之父 [Brendan Eich](https://brendaneich.com/) 也在个人博客上使用。
 
-![代码高亮](https://i.loli.net/2020/01/22/adSczuKlLInXtg4.png)
+![代码高亮](https://i.loli.net/2020/01/22/adSczuKlLInXtg4.webp)
 
 遵循 [HTML5](https://www.w3.org/TR/html5/grouping-content.html#the-pre-element) 标准，Prism 使用语义化的 `<pre>` 元素和 `<code>` 元素来标记代码区块：
 
@@ -105,7 +105,7 @@ toc: true
 
 响应式设计，对手机和平板等移动设备做了优化。
 
-![](https://i.loli.net/2020/01/22/MCQZuD1eRAVf3bz.png)
+![](https://i.loli.net/2020/01/22/MCQZuD1eRAVf3bz.webp)
 
 ### 关于阅读体验
 

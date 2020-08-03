@@ -3,7 +3,7 @@ layout: post
 title:  "gclone配置教程"
 date: 2020-04-07 22:57:47 +0800
 overwrite: 2020-04-08 16:57:17 +0800
-cover: /assets/img/gclone/gclone.png
+cover: /assets/img/gclone/gclone.webp
 tags: [rclone,gclone,GoogleDrive,环境搭建]
 toc: true
 ---
@@ -48,7 +48,7 @@ git clone https://github.com/xyou365/AutoRclone && cd AutoRclone && pip3 install
 首先要打开[Google Drive API][DriveAPI]{:target="_blank"}，点击**Enable the Drive API**然后将其生成的**credentials.json**保存到[AutoRclone][AutoRclone]{:target="_blank"}的根目录。
 >In resulting dialog click DOWNLOAD CLIENT CONFIGURATION and save the file credentials.json to your working directory.
 
-![Google Drive API](/assets/img/gclone/20200407162911.png){:class="post-image"  height="256px"}
+![Google Drive API](/assets/img/gclone/20200407162911.webp){:class="post-image"  height="256px"}
 
 ---
 现在开始知识点①🖋
@@ -79,12 +79,12 @@ python3 gen_sa_accounts.py --quick-setup -6
 ---
 
 运行以上任意一个命令都会得到一串返回信息，类似于
-![](/assets/img/gclone/20200408162455.png){:class="post-image"}
+![](/assets/img/gclone/20200408162455.webp){:class="post-image"}
 复制链接后打开，有可能会提示不安全，未经过验证等信息，直接进入，不必理会。然后就可以授权了，直接点允许，最终会获得授权码，贴到终端即可。
 注意，如果提示
-![](/assets/img/gclone/20200408151101.png){:class="post-image"}
+![](/assets/img/gclone/20200408151101.webp){:class="post-image"}
 打开提示信息给出的链接，选择启用**Service Usage API**，启用之后再回到终端摁个回车即可。
-![](/assets/img/gclone/20200408151008.png){:class="post-image"}
+![](/assets/img/gclone/20200408151008.webp){:class="post-image"}
 如果顺利运行，可以在*accounts*这个文件夹下面看到你生成的`项目数*100`个json的文件。
 
 ### 第三步：将sa账号加入团队盘
@@ -93,45 +93,45 @@ python3 gen_sa_accounts.py --quick-setup -6
 
 先来获取[sa][sa]账号对应的[email][sa]，在chrome商店下载[“EmailDrop - 轻松提取电邮”](https://chrome.google.com/webstore/detail/emaildrop-extract-emails/peilgijmhiocdmdeglhiljipigamfbjh)就能提取到页面里的Email了，一个项目有100个sa的邮箱，通常一页只显示50个。
 
-![search Email](/assets/img/gclone/20200407172105.png){:class="post-image"  height="256px"}
+![search Email](/assets/img/gclone/20200407172105.webp){:class="post-image"  height="256px"}
 
 一次可以获取一个项目（100个sa账号）的email，保存起来再说。
 
-![get Email](/assets/img/gclone/20200407173057.png){:class="post-image"  width="512px"}
+![get Email](/assets/img/gclone/20200407173057.webp){:class="post-image"  width="512px"}
 
 然后在[Groups][gg]新建一个群组，名称什么的随意，主要是新建群组，其实已有的群组也可以。
 
-![New Groups](/assets/img/gclone/20200407171509.png){:class="post-image"  height="256px"}
+![New Groups](/assets/img/gclone/20200407171509.webp){:class="post-image"  height="256px"}
 
 再把sa账号对应的email地址加到群组里就可以了，不过普通用户一次只能添加10个账号到群组，一天只能添加100个。那么600个sa要分6天来添加，所以要把sa账号的分组做好，避免时间久了混乱。
 
-![Add Email](/assets/img/gclone/20200407175345.png){:class="post-image"  height="256px"}
+![Add Email](/assets/img/gclone/20200407175345.webp){:class="post-image"  height="256px"}
 
 ----
 
 如果你的Google账号是G Suite账号而不是个人账号的话，可以使用`add_to_google_group.py`批量导入，节省时间。
 
 群组必须创建在组织中才能调用API不然，出错都不知道为什么。
-![在组织中新建群组](/assets/img/gclone/20200408170306.png){:class="post-image"  height="256px"}
+![在组织中新建群组](/assets/img/gclone/20200408170306.webp){:class="post-image"  height="256px"}
 
 然后再按照官方文档打开[Directory API](https://developers.google.com/admin-sdk/directory/v1/quickstart/python),这里面生成的`credentials.json`要放到**credentials**文件夹里面，而不是AutoRclone的根目录，虽然同名，但是作用不一样，根目录的credentials.json用来创建sa账号，这里的credentials.json这是用来把sa添加进Groups。
-![获取Directory API](/assets/img/gclone/20200408151837.png){:class="post-image"  height="256px"}
+![获取Directory API](/assets/img/gclone/20200408151837.webp){:class="post-image"  height="256px"}
 ```bash
 python3 add_to_google_group.py -g GroupsName@yourdomain.com
 ```
 有的时候一次跑完可能会漏掉一点，所以上面的命令可以多运行几遍。
-![add_to_google_group](/assets/img/gclone/20200408171200.png){:class="post-image"  height="256px"}
+![add_to_google_group](/assets/img/gclone/20200408171200.webp){:class="post-image"  height="256px"}
 
 **假设现在你已经把sa全部添加到群组**，可以把群组账号添加到团队盘了
 
 先得到群组电子邮件地址，就是新建群组时设置的，可以安装下图方法找到。
-![Group 关于](/assets/img/gclone/20200407180818.png){:class="post-image"  height="256px"}
+![Group 关于](/assets/img/gclone/20200407180818.webp){:class="post-image"  height="256px"}
 
-![search groups email](/assets/img/gclone/20200407180625.png){:class="post-image"  height="256px"}
+![search groups email](/assets/img/gclone/20200407180625.webp){:class="post-image"  height="256px"}
 
 添加进团队盘，相关权限按需设置即可，比如我默认给的是“内容管理员”。
 
-![team drive](/assets/img/gclone/20200407181011.png){:class="post-image"  height="256px"}
+![team drive](/assets/img/gclone/20200407181011.webp){:class="post-image"  height="256px"}
 
 ## 继续配置Gclone
 完成上述操作后，我们既获得了批量的sa账号，同时也使sa账号有了操作GoogleDrive的权限。
@@ -160,7 +160,7 @@ root_folder_id = root
 rclone config
 # 选择新建一个remote，具体步骤忽略，只需要在设置Client的时候写好路径就可以
 ```
-![new rclone config](/assets/img/gclone/20200407222224.png){:class="post-image"  height="256px"}
+![new rclone config](/assets/img/gclone/20200407222224.webp){:class="post-image"  height="256px"}
 
 
 更可以进阶地，设置gclone的**client_id**等，以下是我的gclone配置

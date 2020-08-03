@@ -3,7 +3,7 @@ layout: post
 title:  "前端构建工具gulp入门教程"
 date: 2013-12-30 +0800
 overwrite: 2020-02-04 +0800
-cover: 'assets/img/head-gulp.png'
+cover: 'assets/img/HEAD/head-gulp.webp'
 tags: [javascript,gulp,环境搭建,转载]
 author:
     name: binnng

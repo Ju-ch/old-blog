@@ -12,11 +12,11 @@ toc: false
 
 <!--excerpt-->
 
-![IDEA](/assets/img/head-IDEA.jpg)
+![IDEA](/assets/img/HEAD/head-IDEA.webp)
 
 可以看到有几个键我没译成中文，因为实在是不知道怎么翻译😥😥
 
-![KeyMap](/assets/img/ideaKeyMap.jpg){:class="post-image"}
+![KeyMap](/assets/img/ideaKeyMap.webp){:class="post-image"}
 
 话不多说，点击下载：
 

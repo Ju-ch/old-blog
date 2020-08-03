@@ -4,7 +4,7 @@
 
 #### [在线预览 Live Demo →](https://blog.vmert.com/)
 
-![image.png](assets/img/readme/HEAD.png)
+![image.webp](assets/img/readme/HEAD.webp)
 
 如果你喜欢这个博客模板，请在右上角⭐️star一下，非常感谢～
 
@@ -143,7 +143,7 @@ exclude: ['node_modules', 'dev', 'package.json', '自定义的文件夹名字']
 
 #### 侧边栏
 
-![image.png](assets/img/readme/侧边栏.webp)
+![image.webp](assets/img/readme/侧边栏.webp)
 
 侧边栏分为两个部分：【个人简介】和【推荐标签】。当屏幕宽度小于960px时，侧边栏会被隐藏。
 
@@ -194,7 +194,7 @@ Tags配置说明：
 
 #### 文章搜索
 
-![image.png](assets/img/readme/文章搜索.webp)
+![image.webp](assets/img/readme/文章搜索.webp)
 
 基于Jekyll服务器生成文章索引文件 `search.json` 为博客提供搜索服务。输入文章标题或与文章标签相关的关键字即可。
 
@@ -216,7 +216,7 @@ search: true
 
 很多知名网站如[MDN](https://developer.mozilla.org/)、[css-tricks](https://css-tricks.com/)也在用它，就连 JavaScript 之父 [Brendan Eich](https://brendaneich.com/) 也在个人博客上使用。
 
-![image.png](assets/img/readme/代码高亮.png)
+![image.webp](assets/img/readme/代码高亮.webp)
 
 遵循 [HTML5](https://www.w3.org/TR/html5/grouping-content.html#the-pre-element) 标准，Prism 使用语义化的 `<pre>` 元素和 `<code>` 元素来标记代码区块：
 
@@ -243,7 +243,7 @@ nightMode: true
 
 #### 主题皮肤
 
-![image.png](assets/img/readme/主题皮肤.png)
+![image.webp](assets/img/readme/主题皮肤.webp)
 
 支持两种主题颜色蓝色（默认）和粉色
 
@@ -267,7 +267,7 @@ header-img: assets/img/banner.jpg
 
 #### 头图底纹
 
-![image.png](assets/img/readme/底纹.png))
+![image.webp](assets/img/readme/底纹.webp))
 
 在没有图片的情况下单纯显示颜色会不会太无趣了点？于是想到了加入底纹元素，底纹素材是SVG格式的（保存在css样式里），加载比图片快很多。六种底纹（电路、食物、云海、钻石等等）供你选择，配置如下：
 
@@ -334,7 +334,7 @@ postPatterns: 'circuitBoard'
 
 [Valine](https://valine.js.org)是一个第三方社交评论插件，体验相当不错。
 
-![image.png](assets/img/readme/valine.png)
+![image.webp](assets/img/readme/valine.webp)
 
 在配置文件 `_config.yml` 中找到comments的相关配置，设置 `valine` 参数为 `true` 打开评论功能（ `false` 为关闭）。
 

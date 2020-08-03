@@ -3,7 +3,9 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'), // 编译sass
     cleanCSS = require('gulp-clean-css'), // 压缩css文件
     rename = require('gulp-rename'), // 文件重命名
-    imagemin = require('gulp-imagemin'); // 压缩图片
+    imagemin = require('gulp-imagemin'), // 压缩图片
+    webp = require('imagemin-webp'),
+    extReplace = require("gulp-ext-replace");
 let uglifyES = require('gulp-uglify-es').default;
 
 /* 
@@ -70,17 +72,21 @@ gulp.task('github-markdown.css', () =>
  * gulp - Image
  */
 
-gulp.task('img', () =>
-    gulp.src('dev/img/*.*')
+gulp.task('webp', () =>
+    gulp.src('dev/img/**/*.jpg')
         .pipe(imagemin({
-            progressive: true
+            verbose: true,
+            plugins: webp({ quality: 70})
         }))
+        .pipe(extReplace(".webp"))
         .pipe(gulp.dest('assets/img'))
 );
 
 gulp.task('sass', ['app.css', 'prism.css', 'github-markdown.css',]);
 
 gulp.task('script', ['index.js', 'prism.js', 'Valine.js', 'toc.js']);
+
+gulp.task('img', ['webp']);
 
 gulp.task('default', function () {
     gulp.run('sass', 'script', 'img');
