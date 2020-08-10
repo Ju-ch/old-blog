@@ -60,6 +60,4 @@ ipconfig /flushdns
 
 简略来说就是把github的项目fork到[**码云**](https://gitee.com),然后再行以clone大法，速度应该比第二招还要快。
 
-![没有图片]({{ site.oss }}/UTOOLS1580955692724.webp){:class="post-image"  height="256px"}
-
 不过本着又不是不能用的基本原则，长期耽溺与第二招不思进取，所以我也不会这移花接木之法…

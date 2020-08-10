@@ -18,7 +18,7 @@ toc: true
 
 首先下载最新版`Apache HTTP Server 2.4.43`：<http://httpd.apache.org/download.cgi>{:target="_blank"}，找到[`Files for Microsoft Windows`](http://httpd.apache.org/docs/current/platform/windows.html#down){:target="_blank"}，选择`ApacheHaus`，根据自己电脑的情况下载不同的二进制文件。
 
-![image](/assets/img/Apache_PHP/2020-05-15_0001.webp)
+![image]({{ '/assets/img/Apache_PHP/2020-05-15_0001.webp' | relative_url }})
 
 下载结果为二进制压缩包，直接解压到自己的工作目录就可以，后文中我将以下面这个目录为例。
 > C:\Users\Juch\Application
@@ -26,7 +26,7 @@ toc: true
 ## 解压
 
 如图我解压后的安装目录为**C:\Users\Juch\Application\httpd-2.4.43-o111g-x64-vc15\Apache24**
-![image](/assets/img/Apache_PHP/2020-05-15_0002.webp)
+![image]({{ '/assets/img/Apache_PHP/2020-05-15_0002.webp' | relative_url }})
 
 ## 配置
 
@@ -60,7 +60,7 @@ httpd -k install
 > Testing httpd.conf....  
 > Errors reported here must be corrected before the service can be started. 
 
-![image](/assets/img/Apache_PHP/2020-05-15_0003.webp)
+![image]({{ '/assets/img/Apache_PHP/2020-05-15_0003.webp' | relative_url }})
 
 服务启动后，可以使用`httpd`命令启动、停止和重启Apache了
 ```bash
@@ -69,7 +69,7 @@ httpd -k [ start | stop | restart | uninstall ]
 
 启动Apache后在浏览器输入`localshost`不出意外就会出现下面的页面，表示配置完成。
 
-![image](/assets/img/Apache_PHP/localhost_index.html.webp)
+![image]({{ '/assets/img/Apache_PHP/localhost_index.html.webp' | relative_url }})
 
 # 安装PHP
 
@@ -77,13 +77,13 @@ httpd -k [ start | stop | restart | uninstall ]
 
 下载最新的稳定版**PHP 7.4.6**，<https://www.php.net/downloads.php>{:target="_blank"}，点击`Windows downloads`建议下载线程安全`Thread Safe`版本。
 
-![image](/assets/img/Apache_PHP/2020-05-15_0004.webp)
+![image]({{ '/assets/img/Apache_PHP/2020-05-15_0004.webp' | relative_url }})
 
 ## 解压
 
 把下载的二进制文件解压到工作目录
 
-![image](/assets/img/Apache_PHP/2020-05-15_0005.webp)
+![image]({{ '/assets/img/Apache_PHP/2020-05-15_0005.webp' | relative_url }})
 
 ## 配置
 
@@ -139,11 +139,11 @@ httpd -k restart
 
 在Apache工作目录**C:\Users\Juch\Application\httpd-2.4.43-o111g-x64-vc15\Apache24\htdocs**新建一个内容为`<?php phpinfo(); ?>`的php文件，命名为`index.php`。
 
-![image](/assets/img/Apache_PHP/2020-05-15_0006.webp)
+![image]({{ '/assets/img/Apache_PHP/2020-05-15_0006.webp' | relative_url }})
 
 然后在浏览器进入<http://localhost/index.php>{:target="_blank"},看到如下内容即表示配置成功。
 
-![image](/assets/img/Apache_PHP/2020-05-15_0007.webp)
+![image]({{ '/assets/img/Apache_PHP/2020-05-15_0007.webp' | relative_url }})
 
 # 结语
 

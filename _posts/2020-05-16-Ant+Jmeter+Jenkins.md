@@ -16,16 +16,16 @@ toc: true
 # 安装并配置JDK
 
 先检查一本地有没有JDK，有的话就不用下载了，免得浪费时间。
-![image](/assets/img/AntJJ/2020-05-16_0003.webp)
+![image]({{ '/assets/img/AntJJ/2020-05-16_0003.webp' | relative_url }})
 
 可以看到，我本地的一些其他软件自带了JDK，而且应该有三个不同的版本，选择最新的版本设置环境变量就行。如果本地没有现成的JDK，那么建议直接下载最新的长期支持版即可。
 
 Download：<https://openjdk.java.net>
 
-![image](/assets/img/AntJJ/2020-05-16_0004.webp)
+![image]({{ '/assets/img/AntJJ/2020-05-16_0004.webp' | relative_url }})
 
 然后在`path`里面加一行`%JAVA_HOME%\bin`,保存并验证。
-![image](/assets/img/AntJJ/2020-05-16_0005.webp)
+![image]({{ '/assets/img/AntJJ/2020-05-16_0005.webp' | relative_url }})
 
 # Jmeter安装配置
 
@@ -36,10 +36,10 @@ Download：<https://jmeter.apache.org>
 ## 配置环境
 
 新建一个变量名`Jmeter`，变量值如下：
-![image](/assets/img/AntJJ/2020-05-16_0008.webp)
+![image]({{ '/assets/img/AntJJ/2020-05-16_0008.webp' | relative_url }})
 
 再把变量名加到`path`里。
-![image](/assets/img/AntJJ/2020-05-16_0009.webp)
+![image]({{ '/assets/img/AntJJ/2020-05-16_0009.webp' | relative_url }})
 
 Jemter默认保存de是`jtl`格式的文件，需要设置**Jmeter/bin/jmeter.properties**的内容，把`jmeter.save.saveservice.output_format=csv`改为`jmeter.save.saveservice.output_format=xml`
 
@@ -49,9 +49,9 @@ Jemter默认保存de是`jtl`格式的文件，需要设置**Jmeter/bin/jmeter.pr
 Download：<http://ant.apache.org/bindownload.cgi>
 
 ## 配置环境
-![image](/assets/img/AntJJ/2020-05-16_0011.webp)
+![image]({{ '/assets/img/AntJJ/2020-05-16_0011.webp' | relative_url }})
 然后在`path`里面加一行`%ANT%`，保存后打开CMD验证一下。
-![image](/assets/img/AntJJ/2020-05-16_0013.webp)
+![image]({{ '/assets/img/AntJJ/2020-05-16_0013.webp' | relative_url }})
 
 从Jmeter的安装目录中找到**apache-jmeter-5.2.1\extras\ant-jmeter-1.1.1.jar**，把这个文件复制到Ant的**lib**目录中。
 否则Ant在运行报错说找不到`org.programmerplanet.ant.taskdefs.jmeter.JMeterTask`这个类。
@@ -82,7 +82,7 @@ startup.bat
 > http://localhost:8080/\{\{jenkins-2.222.3\}\}
 
 注意这里花括号搞起来的是**webapps**目录里Jenkins的`war`包的文件名
-![image](/assets/img/AntJJ/2020-05-16_0014.webp)
+![image]({{ '/assets/img/AntJJ/2020-05-16_0014.webp' | relative_url }})
 
 一般来说，默认的Jenkins插件源在国内都很慢，不用点魔法根本不能玩，对于不会魔法的同学我也要妙招要写出来。
 * 找到Jenkins根目录的**hudson.model.UpdateCenter.xml**文件，把源地址改为**http://mirror.xmission.com/jenkins/updates/update-center.json**
@@ -176,13 +176,13 @@ startup.bat
 
 来 Create new jobs 吧！
 
-![image](/assets/img/AntJJ/2020-05-16_0015.webp)
+![image]({{ '/assets/img/AntJJ/2020-05-16_0015.webp' | relative_url }})
 
 # 附录
 
 ## TomCat
 
-![image](/assets/img/AntJJ/tomcat.webp)
+![image]({{ '/assets/img/AntJJ/tomcat.webp' | relative_url }})
 获得猫咪：<http://tomcat.apache.org>
 
 ## Download List

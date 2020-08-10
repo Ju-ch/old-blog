@@ -64,8 +64,8 @@ git push origin <new-branch-name>
 
 然后去到[github.com](https://github.com){:target="_blank"}中的的自己的仓库中去，找到branch
 
-![image.webp](https://i.loli.net/2020/02/09/m7XsAuF4TYHoWM9.webp){:class="post-image"}
+![image.webp](https://i.loli.net/2020/02/09/m7XsAuF4TYHoWM9.png){:class="post-image"}
 
 然后找到我们之前创建的分支，然后把它pull request即可
 
-![image.webp](https://i.loli.net/2020/02/09/2uPBjQ1mYLqJKax.webp){:class="post-image"}
+![image.webp](https://i.loli.net/2020/02/09/2uPBjQ1mYLqJKax.png){:class="post-image"}

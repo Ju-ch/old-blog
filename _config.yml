@@ -2,7 +2,7 @@
 title: 'Juch Blog'
 description: '很高兴能在这里与你分享我对技术和生活的思考。'
 keyword: 'Juch, Tester'
-url: 'https://blog.vmert.com'
+url: 'old.blog.vmert.com'
 
 # when build blog on server, if you don't need baseurl, you should leave this value blank.
 # 在服务器上建站时，如果你不需要子域名，请将这一格留空
@@ -30,16 +30,16 @@ footer:
 quote:
   - name: OneIndex
     icon: onedrive
-    url: 'https://vmert.com/one'
+    url: 'https://6683672.xyz/one'
   - name: 图书馆
     icon: book
-    url: 'https://book.vmert.com'
+    url: 'https://book.vmert.com:8080/'
   - name: 邮局
     icon: mail
     url: 'https://mail.vmert.com'
   - name: Team Drive
     icon: gdrive
-    url: 'https://drive.vmert.com'
+    url: 'https://drive.6683672.xyz'
 
 # Author 配置博主信息
 author: 'Juchiahau'
@@ -49,9 +49,6 @@ avatar: '/assets/img/profile.webp'
 
 # Post excerpts 自定义摘要
 excerpt_separator: <!--excerpt-->
-
-# OSS 空间路径
-oss: 'https://jekyll.oss-cn-hongkong.aliyuncs.com'
 
 # Search
 search: true
@@ -91,7 +88,17 @@ recommend-condition-size: 12 # a tag will be recommended if the size of it is mo
 # Build settings
 paginate: 6
 paginate_path: 'page:num'
-exclude: ['node_modules', 'dev', 'package.json', 'gulpfile.js', '.gitignore', 'README.md']
+exclude: 
+  - node_modules
+  - dev
+  - package.json
+  - gulpfile.js
+  - .gitignore
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - package-lock.json
+  - .travis.yml
 
 # Markdown
 markdown: kramdown
@@ -101,7 +108,7 @@ kramdown:
 
 # Permalink
 # See: https://github.com/kaeyleo/jekyll-theme-H2O/issues/35
-permalink: /:year/:month/:title.html
+permalink: /:year/:title/
 
 # Plugins
 plugins: [jekyll-paginate]

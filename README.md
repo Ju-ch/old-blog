@@ -1,8 +1,10 @@
 ## jekyll-theme-H2O
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/346998b2-75cf-4e41-8e8c-377cf2e525fa/deploy-status)](https://app.netlify.com/sites/juch-old-blog/deploys)
+
 本项目fork自[jekyll-theme-H2O](https://github.com/kaeyleo/jekyll-theme-H2O) 的 committed ："[19fe6bd](https://github.com/kaeyleo/jekyll-theme-H2O/tree/19fe6bd63cb2eb5fcff446143df65ada47a19874)"
 
-#### [在线预览 Live Demo →](https://blog.vmert.com/)
+#### [在线预览 Live Demo →](https://old.blog.vmert.com)
 
 ![image.webp](assets/img/readme/HEAD.webp)
 
