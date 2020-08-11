@@ -108,7 +108,7 @@ kramdown:
 
 # Permalink
 # See: https://github.com/kaeyleo/jekyll-theme-H2O/issues/35
-permalink: /:year/:title/
+permalink: /:year/:title
 
 # Plugins
 plugins: [jekyll-paginate]
