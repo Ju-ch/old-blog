@@ -1,6 +1,13 @@
 <script type="text/javascript">
     var instagramNote = '这个页面已停更许久，留作纪念，去它的新站点看看吧！';
-    
+    var postPaths = {"/2020/ant-jmeter-jenkins" : "/2020/Ant-Jmeter-Jenkins",
+    "/2020/idea-keymap-chinese" : "/2020/IDEA-KeyMap-Chinese",
+    "/2020/lazyload" : "/2020/Lazyload",
+    "/2020/microsoft-flow-email" : "/2020/Microsoft-Flow-Email",
+    "/2020/ppa-one" : "/2020/PPA-One",
+    "/2020/ubuntu-install-mysql" : "/2020/Ubuntu-install-MySQL"};
+    var postPath = window.location.pathname
+
     $("body").overhang({
       type: "confirm",
       primary: "#6e979f",
@@ -12,7 +19,11 @@
       overlayColor: "#f1f2f6",
       callback: function (value) {
         if (value) {
-          window.location.href = "https://blog.vmert.com/";
+          if (postPaths[postPath] != undefined) {
+            window.location.href = "https://blog.vmert.com" + postPaths[postPath];
+          } else {
+            window.location.href = "https://blog.vmert.com" + postPath;
+          }
         } else {
           alert("也许你更喜欢这个风格...");
         }
