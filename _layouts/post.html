@@ -18,7 +18,7 @@
       </div>
       <h1>{{ page.title }}</h1>
       <div class="post-meta">
-        <a href="{% if page.author %}{{ page.author.url }}{% else %}{{ site.url }}{% endif %}" class="post-meta-item"
+        <a href="{% if page.author %}{{ page.author.url }}{% else %}https://vmert.com/{% endif %}" class="post-meta-item"
         title="author" target="_blank"><i
           class="iconfont icon-author"></i>{% if page.author %}{{ page.author.name }}{% else %}{{ site.author }}{% endif %}</a>
       <time class="post-meta-item" datetime="{{ page.date | date:"%y-%m-%d" }}"

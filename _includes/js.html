@@ -1,3 +1,24 @@
+<script type="text/javascript">
+    var instagramNote = '这个页面已停更许久，留作纪念，去它的新站点看看吧！';
+    
+    $("body").overhang({
+      type: "confirm",
+      primary: "#6e979f",
+      accent: "#d4d4d4",
+      message: instagramNote,
+      custom: true,
+      html: true,
+      overlay: true,
+      overlayColor: "#f1f2f6",
+      callback: function (value) {
+        if (value) {
+          window.location.href = "https://blog.vmert.com/";
+        } else {
+          alert("也许你更喜欢这个风格...");
+        }
+      }
+    });
+</script>
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5edb0a116d1552ce"></script>
 <script type="text/javascript" async src="{{ "/assets/js/prism.min.js" | relative_url }}"></script>
 <script type="text/javascript" async src="{{ "/assets/js/index.min.js" | relative_url }}"></script>
